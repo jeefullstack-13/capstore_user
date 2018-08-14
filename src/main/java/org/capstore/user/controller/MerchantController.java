@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MerchantController {
 	
-	@RequestMapping("/")
+	@RequestMapping("/merchant")
 	public String mainPage() {
 		
 		return "merchant";
