@@ -11,5 +11,7 @@ public class AdminController {
 		
 		return "adminHome";
 	}
+	
+	
 }
 	
