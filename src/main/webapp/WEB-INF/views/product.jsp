@@ -154,6 +154,6 @@
 				<hr>
 			</div>
 		</div>
-		<h3 style="color:blue;">Similar Products</h3>
+		<h3 >Similar Products</h3>
 	</div>
 </div>
