@@ -15,7 +15,7 @@
 <body>
 <div class="chatbox chatbox--tray chatbox--empty">
     <div class="chatbox__title">
-        <h5><a href="#">Customer Service</a></h5>
+        <h5><a href="#">Chat</a></h5>
         <button class="chatbox__title__tray">
             <span></span>
         </button>
