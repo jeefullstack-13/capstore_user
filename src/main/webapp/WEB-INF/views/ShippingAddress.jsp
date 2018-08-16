@@ -1,20 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
- <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-<title>Insert title here</title>
-<link href="./resources/css/shippingCss.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="./resources/script/shippingScript.js"></script>
-</head>
-<body style="align-items: center;">
 
 <h3 align="center">Shipping Address</h3>
 <div style="float: left;width: 50%; " >
@@ -24,7 +7,7 @@
 <c:if test = "${!empty addresses}">
 	
 	<c:forEach items= "${addresses}" var="address">
-	<table class="table" >
+	<table class="table1" >
 	<tr>
 	<td >
 	<input type="radio" name="accountType" id="currentAdd" value="${address.addId}"/></td>
@@ -44,7 +27,7 @@
 
 	<div id="altAddress" style="padding-left: 600px">
 <form:form id="myform" method="post" modelAttribute="address" action="save" onsubmit="return validateShippingAddForm()">
-<table class="table" >
+<table class="table1" >
 <tr>
 <td><form:input type="hidden" path="addId" size="20" readonly="true" value="${address.addId}"></form:input></td>
 <td><input type="button" onclick="closeAltAdd()" style="background-image: url('./resources/images/intoButton.png'); width: 18px;height: 20px"></td>
@@ -53,7 +36,7 @@
 Enter the shipping address</td></tr>
 <tr>
 <td>
-<div><form:input type="text" id="addSt" path="addSt" placeholder="  Address" style="height:90px;width:405px" /></div>
+<div><form:input type="text" id="addSt" path="addSt" placeholder="  Address" style="height:90px;width:410px" /></div>
 </td>
 </tr>
 <tr>
@@ -62,7 +45,7 @@ Enter the shipping address</td></tr>
 </td>
 </tr>
 </table>
-<table class="table">
+<table class="table1">
 <tr>
 <td>
 <div><form:select id="city" path="city"  style="height:50px;width:205px">>
@@ -104,7 +87,7 @@ Enter the shipping address</td></tr>
 
 </td>
 <td>
-<div><form:input type="text" id="zipcode" path="zipcode"  placeholder="  Zipcode" style="height:44px;width:200px;"/></div>
+<div><form:input type="text" id="zipcode" path="zipcode"  placeholder="  Zipcode" style="height:45px;width:205px;"/></div>
 </td>
 </tr>
 <tr>
@@ -130,7 +113,3 @@ Enter the shipping address</td></tr>
                     <button type="submit" class="btn btn-primary">Proceed to payment page</button> 
 </div>
 </a></div>
-
-
-</body>
-</html>

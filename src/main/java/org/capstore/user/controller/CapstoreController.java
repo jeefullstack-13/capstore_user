@@ -41,4 +41,5 @@ public class CapstoreController {
 		
 		return "Product_full";
 	}
+	
 }
