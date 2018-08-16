@@ -54,6 +54,11 @@ public class CapstoreController {
 		
 		return "shippingAddressCap";
 	}
+	@RequestMapping("/paymentCap")
+	public String paymentPage() {
+	
+	return "PaymentCap";
+}
 	@RequestMapping("/Wishlist_full")
 	public String productFull2() {
 		
