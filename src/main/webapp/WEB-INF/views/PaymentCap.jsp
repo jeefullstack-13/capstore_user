@@ -11,24 +11,38 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href=".\resources\css\footer.css">
-  <link rel="stylesheet" href=".\resources\css\loginForm.css">
   <link rel="stylesheet" href=".\resources\css\header.css">
-  <script src=".\resources\jscripts\loginPanelView.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="./resources/css/shippingCss.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="./resources/script/shippingScript.js"></script>
-  <script>
-	// Get the modal
-	var modal = document.getElementById('id01'); 
-
-	// When the user clicks anywhere outside of the modal, close it
-	window.onclick = function(event) {
-   	 if (event.target == modal) {
-   	     modal.style.display = "none";
-   	 }
+  
+  <script type="text/javascript">
+function showAccountDetails(){
+	if(document.getElementById('credit').checked){
+		document.getElementById('showAccount').style.display='block';
+		document.getElementById('showAccount1').style.display='none';
+		document.getElementById('showNetAccount').style.display='none';
+		
 	}
-  </script>
+	else if(document.getElementById('debit').checked){
+		document.getElementById('showAccount').style.display='none';
+		document.getElementById('showAccount1').style.display='block';
+		document.getElementById('showNetAccount').style.display='none';
+		
+	}
+ else if(document.getElementById('NetBanking').checked){
+       document.getElementById('showNetAccount').style.display='block'; 
+       document.getElementById('showAccount').style.display='none';
+       document.getElementById('showAccount1').style.display='none';
+ }
+	else
+		document.getElementById('showNetAccount').style.display='none';
+	 
+}
+
+window.onload= function(){
+	document.getElementById('showAccount').style.display='none';
+	document.getElementById('showNetAccount').style.display='none';
+	 document.getElementById('showAccount1').style.display='none';
+}
+</script>
 <%@ include file="header.jsp" %>   
 </head>
 <body id="myPage">
@@ -41,15 +55,13 @@
       <li class="active"><a href="#">Home</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop By Category <span class="caret"></span></a>
         <ul class="dropdown-menu">
-         <ul class="list-inline">
-          <li><a href="Page1_full">Electronics</a></li><br>
-          <li><a href="#">Clothing</a></li><br>
+        
+          <li><a href="page1.jsp">Electronics</a></li>
+          <li><a href="#">Clothing</a></li>
           <li><a href="#">Books</a></li>
         </ul>
         </ul>
-      </li>
-    
-    </ul>
+
     <form class="navbar-form navbar-left" action="/action_page.php">
     <div class="input-group">
     <input type="text" class="form-control" placeholder="Search">
@@ -65,7 +77,6 @@
 
  
     <li><a href="#"> My Orders</a></li>
-     <li><a href="mycart.com"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
       <li><a href="mycart.com"><span class="glyphicon glyphicon-shopping-cart"></span> My Cart</a></li>
     
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> LogOut</a></li>
@@ -75,7 +86,9 @@
 </nav>
 <section>
  	 <article>
-<%@include file="ShippingAddress.jsp" %>  
+<%@include file="payment.jsp" %>	
 	</article>
 </section>
+
 <%@  include file="footer.jsp" %>
+

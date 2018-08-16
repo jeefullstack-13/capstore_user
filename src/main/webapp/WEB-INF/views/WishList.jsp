@@ -77,9 +77,11 @@
                         <td class="col-sm-1 col-md-1 text-center"><strong>$200</strong></td>
                         <td class="col-sm-1 col-md-1">
                         <td>
-                        <button type="button" class="btn">
+                        <a href="shippingAddressCap">
+                        <button type="button" class="btn btn-success">
                             <span class="glyphicon glyphico-default"></span>Buy Now
                         </button>
+                        </a>
                         </td>
                         <td>
                         <button type="button" class="btn btn-danger">
@@ -106,9 +108,10 @@
                         <td class="col-md-1 text-center"><strong>$100</strong></td>
                         <td class="col-md-1">
                         <td>
-                        <button type="button" class="btn">
+                        <a href="shippingAddressCap">
+                        <button type="button" class="btn btn-success">
                             <span class="glyphicon glyphico-default"></span>Buy Now
-                        </button>
+                        </button></a>
                         </td>
                         <td>
                         <button type="button" class="btn btn-danger">
