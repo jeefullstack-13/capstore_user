@@ -124,7 +124,7 @@ Enter the shipping address</td></tr>
 </div>
 
 	<div id="altAddress" style="padding-left: 600px">
-<form id="myform" method="post" action="save" onsubmit="return validateShippingAddForm()">
+<form id="myform" method="post" action="paymentCap" onsubmit="return validateShippingAddForm()">
 <table class="table1" >
 <tr>
 <td><input type="hidden" name="addId" size="20" readonly="true" value="${address.addId}"></td>
@@ -207,7 +207,7 @@ Enter the shipping address</td></tr>
 
 </div>
 </div>
-<div style="float: right;width: 50%; padding-left: 200px;padding-top: 30px;" ><a href="moneyPage" onclick="return validateAddForm()" name="next">
+<div style="float: right;width: 50%; padding-left: 200px;padding-top: 30px;" ><a href="paymentCap" onclick="return validateAddForm()" name="next">
 <div class="btn-ground text-center" id="butptp">
                     <button type="submit" class="btn btn-primary">Proceed to payment page</button> 
 </div>
