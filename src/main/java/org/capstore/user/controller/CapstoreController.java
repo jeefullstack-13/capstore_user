@@ -50,7 +50,7 @@ public class CapstoreController {
 
 
 	@RequestMapping("/shippingAddressCap")
-	public String productFull1() {
+	public String shippingAddress() {
 		
 		return "shippingAddressCap";
 	}
@@ -64,11 +64,8 @@ public class CapstoreController {
 		
 		return "WishList";
 	}
-	@RequestMapping("/target")
-	public String productFull4() {
-		
-		return "target";
-	}
+	
+	
 	
 	
 }

@@ -93,7 +93,7 @@
 					</div>
 					<div class="btn-group cart">
 				
-						<a href="ShippingAddressCap" ><button type="button" class="btn btn-success">
+						<a href="shippingAddressCap" ><button type="button" class="btn btn-success">
 							Buy Now 
 						</button></a>
 					</div>
