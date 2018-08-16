@@ -47,6 +47,7 @@ public class CapstoreController {
 		
 		return "Product_full";
 	}
+<<<<<<< HEAD
 
 	@RequestMapping("/shippingAddressCap")
 	public String productFull1() {
@@ -69,5 +70,7 @@ public class CapstoreController {
 		return "target";
 	}
 	
+=======
+>>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
 	
 }
