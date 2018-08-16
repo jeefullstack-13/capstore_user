@@ -6,9 +6,9 @@
       <img src=".\resources\images\login_avatar.png" alt="Avatar" class="avatar">
     </div>
 	<div class="radioContainer">
-	<input type="radio" name="selectuser" value="1" id="admin" onclick=selectView()>Admin
-	<input type="radio" name="selectuser" value="2" id="merchant" onclick=selectView()>Merchant
-	<input type="radio" name="selectuser" value="3" id="customer" onclick=selectView()>Customer
+	<input type="radio" name="selectuser" value="1" id="admin" onclick=selectLView()>Admin
+	<input type="radio" name="selectuser" value="2" id="merchant" onclick=selectLView()>Merchant
+	<input type="radio" name="selectuser" value="3" id="customer" onclick=selectLView()>Customer
 	</div>
   
     <div class="container" id="loginAdmin" style="display:none">
