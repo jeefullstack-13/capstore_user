@@ -13,36 +13,7 @@
   <link rel="stylesheet" href=".\resources\css\footer.css">
   <link rel="stylesheet" href=".\resources\css\header.css">
   
-  <script type="text/javascript">
-function showAccountDetails(){
-	if(document.getElementById('credit').checked){
-		document.getElementById('showAccount').style.display='block';
-		document.getElementById('showAccount1').style.display='none';
-		document.getElementById('showNetAccount').style.display='none';
-		
-	}
-	else if(document.getElementById('debit').checked){
-		document.getElementById('showAccount').style.display='none';
-		document.getElementById('showAccount1').style.display='block';
-		document.getElementById('showNetAccount').style.display='none';
-		
-	}
- else if(document.getElementById('NetBanking').checked){
-       document.getElementById('showNetAccount').style.display='block'; 
-       document.getElementById('showAccount').style.display='none';
-       document.getElementById('showAccount1').style.display='none';
- }
-	else
-		document.getElementById('showNetAccount').style.display='none';
-	 
-}
-
-window.onload= function(){
-	document.getElementById('showAccount').style.display='none';
-	document.getElementById('showNetAccount').style.display='none';
-	 document.getElementById('showAccount1').style.display='none';
-}
-</script>
+  
 <%@ include file="header.jsp" %>   
 </head>
 <body id="myPage">
@@ -77,7 +48,7 @@ window.onload= function(){
 
  
     <li><a href="#"> My Orders</a></li>
-      <li><a href="cartFull"><span class="glyphicon glyphicon-shopping-cart"></span> My Cart</a></li>
+      <li><a href="mycart.com"><span class="glyphicon glyphicon-shopping-cart"></span> My Cart</a></li>
     
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> LogOut</a></li>
  
@@ -86,7 +57,7 @@ window.onload= function(){
 </nav>
 <section>
  	 <article>
-<%@include file="payment.jsp" %>	
+<%@include file="paymentSuccessfull.jsp" %>	
 	</article>
 </section>
 

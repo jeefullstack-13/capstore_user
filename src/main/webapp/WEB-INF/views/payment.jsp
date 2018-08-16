@@ -76,25 +76,26 @@ window.onload= function(){
   </div>
 </nav> --%>
 <form method="post" action="#">
-<h3 align="center" >Payment Form</h3>
+<h3 align="center" ><b>Payment Form</b></h3>
 
 <div align="center">
 	<div >
 	<div  >Choose Payment Method:</div>
 	<div>
+	
 		<input type="radio" name="modeOfPurchase" onclick="showAccountDetails()" id="credit" value="Credit"/>Credit</br>
 		<div   id="showAccount">
 		<div>
-			Card Number: <input  type="text"  path="" >
-			CVV Number: <input  type="text"  path="">	
+			Card Number: <input  type="text"  path="" ></br></br>
+			CVV Number: <input  type="text"  path=""></br></br>	
 			
 		</div>
 	</div>
 		<input type="radio" name="modeOfPurchase" onclick="showAccountDetails()" id="debit" value="Debit"/>Debit</br>
 		<div   id="showAccount1">
 		<div>
-			Card Number: <input  type="text"  path="" >
-			CVV Number: <input  type="text"  path="">	
+			Card Number: <input  type="text"  path="" ></br></br>
+			CVV Number: <input  type="text"  path=""></br></br>	
 			
 		</div>
 	</div> 
@@ -109,9 +110,13 @@ window.onload= function(){
 	</div>
 	</div>
 	
-	<div style="margin-left: 150px;">
-		<input type="submit"  value="Pay">
-	</div>
+	<div style="float: right;width: 50%; padding-left: 200px;padding-top: 30px;" >
+<div class="btn-ground text-center" id="butptp">
+                 <a href="paymentSuccess"> <button type="button" class="btn btn-success">
+                           Proceed to pay <span class="glyphicon glyphicon-play"></span>
+                        </button></a>
+</div>
+</div>
 	
 </div>
 </form>

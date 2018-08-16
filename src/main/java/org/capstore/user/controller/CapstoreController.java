@@ -59,6 +59,12 @@ public class CapstoreController {
 	
 	return "PaymentCap";
 }
+	@RequestMapping("/paymentSuccess")
+	public String paymentSuccessPage() {
+	
+	return "paymentSuccessfullCap";
+}
+	
 	@RequestMapping("/Wishlist_full")
 	public String productFull2() {
 		
