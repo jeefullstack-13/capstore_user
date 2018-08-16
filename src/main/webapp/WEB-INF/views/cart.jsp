@@ -34,7 +34,7 @@
 
  
     <li><a href="#"> My Orders</a></li>
-      <li><a href="cartFull"><span class="glyphicon glyphicon-shopping-cart"></span> My Cart</a></li>
+      <li><a href="mycart.com"><span class="glyphicon glyphicon-shopping-cart"></span> My Cart</a></li>
     
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> LogOut</a></li>
  
