@@ -153,7 +153,7 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-6 product_img">
-                        <img src="http://img.bbystatic.com/BestBuy_US/images1/products/5613/5613060_sd.jpg" class="img-responsive">
+                        <img src=".\resources\images1\picture4.jpg" class="img-responsive">
                     </div>
                     <div class="col-md-6 product_content">
                         <h4>Product Id: <span>51526</span></h4>

@@ -10,7 +10,7 @@
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop By Category <span class="caret"></span></a>
         <ul class="dropdown-menu">
          <ul class="list-inline">
-          <li><a href="page1.jsp">Electronics</a></li><br>
+          <li><a href="Page1_full">Electronics</a></li><br>
           <li><a href="#">Clothing</a></li><br>
           <li><a href="#">Books</a></li>
         </ul>
@@ -33,6 +33,7 @@
 
  
     <li><a href="#"> My Orders</a></li>
+     <li><a href="mycart.com"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
       <li><a href="mycart.com"><span class="glyphicon glyphicon-shopping-cart"></span> My Cart</a></li>
     
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> LogOut</a></li>
@@ -88,7 +89,7 @@
     <div class="col-md-4"><span class="border border-0">
       <div class="thumbnail">
       
-       <a href="page1.jsp ">
+       <a href="Page1_full ">
           <img src=".\resources\images1\picture4.jpg" alt="mobile" style="width:50%;height:27%"></a>
           <div class="caption">
            <div align="center">Iphone:6s<br> price:59999INR</div>

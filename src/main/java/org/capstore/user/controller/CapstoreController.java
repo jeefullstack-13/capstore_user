@@ -11,6 +11,12 @@ public class CapstoreController {
 		
 		return "CapStoreAfterLogin";
 	}
+	@RequestMapping("/CapStoreHomeAfter1")
+	public String capStoreHomeFull1() {
+		
+		return "CapStoreHomeAfter1";
+	}
+	
 	
 	@RequestMapping("/CapStoreHome_full")
 	public String capStoreHomeFull() {
@@ -41,4 +47,27 @@ public class CapstoreController {
 		
 		return "Product_full";
 	}
+
+	@RequestMapping("/shippingAddressCap")
+	public String productFull1() {
+		
+		return "shippingAddressCap";
+	}
+	@RequestMapping("/Wishlist_full")
+	public String productFull2() {
+		
+		return "Wishlist_full";
+	}
+	@RequestMapping("/WishList")
+	public String productFull3() {
+		
+		return "WishList";
+	}
+	@RequestMapping("/target")
+	public String productFull4() {
+		
+		return "target";
+	}
+	
+	
 }

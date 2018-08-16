@@ -1,5 +1,4 @@
-
- <nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
      
@@ -9,7 +8,7 @@
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop By Category <span class="caret"></span></a>
         <ul class="dropdown-menu">
         
-          <li><a href="Page1_full">Electronics</a></li>
+          <li><a href="page1.jsp">Electronics</a></li>
           <li><a href="#">Clothing</a></li>
           <li><a href="#">Books</a></li>
         </ul>
@@ -43,24 +42,24 @@
 				<div class="col-md-12">
 					<div class="product col-md-3 service-image-left">
                     
-<center>
+
 							<div id="target" class="primeimage">
-							<img id="item-display" src=".\resources\images1\prakashfinal.jpg" alt="" style="width:150px;height:300px;"></img>
+							<img id="item-display" src=".\resources\images1\prakashfinal.jpg" alt="" style="width:150px;height:290px;"></img>
 							</div>
-				</center>
+			
 					</div>
 					
 					<div class="container service1-items col-sm-2 col-md-2 pull-left">
 						<center>
-							<a href="productimage2.jpg" target="target" id="item-1" class="service1-item">
+							<a   id="item-1" class="service1-item">
 								<img src=".\resources\images1\productimage2.jpg" alt=""></img>
 							</a>
 							<a
-							href="productimage3.png" target="target" id="item-2" class="service1-item">
+							 id="item-2" class="service1-item">
 								<img src=".\resources\images1\productimage3.png" alt="hi"></img>
 							</a>
-							<a href="productimage4.jpg" target="target" id="item-3" class="service1-item">
-								<img src=".\resources\images1\productimage4.jpg" alt="" style="height:300px;"></img>
+							<a  id="item-3" class="service1-item">
+								<img src=".\resources\images1\productimage4.jpg" alt="" style="height:100px;"></img>
 							</a>
 						</center>
 					</div>
@@ -76,9 +75,11 @@
 					 </div>
 					
 					<div class="btn-group wishlist">
-						<button type="button" class="btn btn-danger">
+					
+						<a href="Wishlist_full" ><button type="button" class="btn btn-danger">
+					
 							Add to wishlist 
-						</button>
+						</button></a>
 					</div>
 					<br>
 					<br>
@@ -91,15 +92,15 @@
 						</button>
 					</div>
 					<div class="btn-group cart">
-						<button type="button" class="btn btn-success">
+				
+						<a href="ShippingAddressCap" ><button type="button" class="btn btn-success">
 							Buy Now 
-						</button>
+						</button></a>
 					</div>
 					
 				</div>
 				</div>
 					
-		<!--  Removed form here -->
 			</div> 
 		</div>
 		<div class="container-fluid">		
@@ -123,17 +124,19 @@
 										SI 1810mAH lithium-ion battery1 year manufacturer warranty for device and in-box accessories
 										 including batteries from the date of purchase
 								</p>
+								<ul>
 								<li>It supports the latest ATX12V v2.3 standard and is backward compatible with ATX12V 2.2 and ATX12V 2.01 systems</li>
 								<li>An ultra-quiet 140mm double ball-bearing fan delivers great airflow at an very low noise level by varying fan speed in response to temperature</li>
 								<li>80Plus certified to deliver 80% efficiency or higher at normal load conditions (20% to 100% load)</li>
 								<li>0.99 Active Power Factor Correction provides clean and reliable power</li>
-								<li>Universal AC input from 90~264V — no more hassle of flipping that tiny red switch to select the voltage input!</li>
+								<li>Universal AC input from 90~264V â€” no more hassle of flipping that tiny red switch to select the voltage input!</li>
 								<li>Extra long fully-sleeved cables support full tower chassis</li>
-								<li>A three year warranty and lifetime access to Corsair’s legendary technical support and customer service</li>
+								<li>A three year warranty and lifetime access to Corsairâ€™s legendary technical support and customer service</li>
 								<li>Over Current/Voltage/Power Protection, Under Voltage Protection and Short Circuit Protection provide complete component safety</li>
 								<li>Dimensions: 150mm(W) x 86mm(H) x 160mm(L)</li>
 								<li>MTBF: 100,000 hours</li>
-								<li>Safety Approvals: UL, CUL, CE, CB, FCC Class B, TÜV, CCC, C-tick</li>
+								<li>Safety Approvals: UL, CUL, CE, CB, FCC Class B, TÃœV, CCC, C-tick</li>
+								</ul>
 							</section>
 										  
 						</div>
@@ -151,6 +154,6 @@
 				<hr>
 			</div>
 		</div>
-		<h3>Similar Products</h3>
+		<h3 >Similar Products</h3>
 	</div>
 </div>
