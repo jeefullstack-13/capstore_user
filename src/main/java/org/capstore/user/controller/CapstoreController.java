@@ -50,7 +50,7 @@ public class CapstoreController {
 
 
 	@RequestMapping("/shippingAddressCap")
-	public String shippingAddress() {
+		public String shippingPage() {
 		
 		return "shippingAddressCap";
 	}
