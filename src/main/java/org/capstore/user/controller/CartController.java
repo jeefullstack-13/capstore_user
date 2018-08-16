@@ -16,4 +16,9 @@ public class CartController {
 		
 		return "CartFull";
 	}
+	@RequestMapping("/shippingAddress")
+	public String shippingAddress() {
+		
+		return "shippingAddressCap";
+	}
 }

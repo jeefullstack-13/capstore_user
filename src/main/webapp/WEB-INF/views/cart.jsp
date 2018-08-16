@@ -118,7 +118,7 @@
                         </button></td>
                         <td>
                         
-                       <a href="shippingAddress"></a> <button type="button" class="btn btn-success">
+                       <a href="shippingAddress"> <button type="button" class="btn btn-success">
                             Checkout <span class="glyphicon glyphicon-play"></span>
                         </button></a></td>
                     </tr>
