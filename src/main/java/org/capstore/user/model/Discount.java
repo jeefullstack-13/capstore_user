@@ -6,7 +6,6 @@ import java.util.Date;
 public class Discount {
 	private int discountId;
 	private Inventory inventory;
-	private Category category;
 	private double promoAmount;
 	private int discountPercent;
 	private Date issueDate;
@@ -48,27 +47,18 @@ public class Discount {
 	public void setExpiryDate(Date expiryDate) {
 		this.expiryDate = expiryDate;
 	}
-	
-	public Category getCategory() {
-		return category;
-	}
-	public void setCategory(Category category) {
-		this.category = category;
-	}
-	
-	public String getPromoName() {
+public String getPromoName() {
 		return promoName;
 	}
 	public void setPromoName(String promoName) {
 		this.promoName = promoName;
 	}
 	
-	public Discount(int discountId, Inventory inventory, Category category, double promoAmount, int discountPercent,
+	public Discount(int discountId, Inventory inventory, double promoAmount, int discountPercent,
 			Date issueDate, Date expiryDate, String promoName) {
 		super();
 		this.discountId = discountId;
 		this.inventory = inventory;
-		this.category = category;
 		this.promoAmount = promoAmount;
 		this.discountPercent = discountPercent;
 		this.issueDate = issueDate;
