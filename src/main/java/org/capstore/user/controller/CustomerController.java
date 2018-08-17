@@ -23,10 +23,6 @@ public class CustomerController {
 	}
 	@RequestMapping("/order")
 	public String orders() {
-		final String uri="http://localhost:8081/PilotRestApp/api/v1/pilots";
-		RestTemplate restTemplate=new RestTemplate();
-		
-		Order[] orders= restTemplate.getForObject(uri, Order[].class);
 		
 		return "order";
 	}
