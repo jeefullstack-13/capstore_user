@@ -1,9 +1,12 @@
 package org.capstore.user.controller;
 
+
 import javax.servlet.http.HttpSession;
+
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
 
 @Controller
 public class CustomerController {
@@ -20,6 +23,7 @@ public class CustomerController {
 		
 		return "customHomePage";
 	}
+
 	
 	@RequestMapping("/logout")
 	public String logout(HttpSession session) {
@@ -28,4 +32,5 @@ public class CustomerController {
 		return "redirect:/";
 	}
 	
+
 }

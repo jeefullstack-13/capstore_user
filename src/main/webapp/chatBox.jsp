@@ -1,34 +1,18 @@
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="merchantHome">Home</a></li>
-      
-      <li><a href="inventPage" target="cntframe">My Inventory</a></li>
-      <li><a href="myProfile" target="cntframe">My Profile</a></li>
-    </ul>
-    <form class="navbar-form navbar-left">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search" name="search">
-        <div class="input-group-btn">
-          <button class="btn btn-default" type="submit">
-            <i class="glyphicon glyphicon-search"></i>
-          </button>
-        </div>
-      </div>
-    </form>
-     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
-    </ul>
-    
-  </div>
-  
-    </nav>
-    
-    
-    <div>
-<iframe name="cntframe" id="frm" src="carousal.jsp" width="100%" height="900"></iframe>
-</div>
- <div class="chatbox chatbox--tray chatbox--empty">
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chat Box</title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="./resources/css/chat.css">
+<script src="./resources/script/chatscript.js"></script>
+</head>
+<body>
+<div class="chatbox chatbox--tray chatbox--empty">
     <div class="chatbox__title">
         <h5><a href="#">Customer Service</a></h5>
         <button class="chatbox__title__tray">
@@ -57,5 +41,5 @@
     </form>
     <textarea class="chatbox__message" placeholder="Write something interesting"></textarea>
 </div>
-
-
+</body>
+</html>>

@@ -50,15 +50,21 @@ public class CapstoreController {
 
 
 	@RequestMapping("/shippingAddressCap")
-	public String shippingPage() {
+		public String shippingPage() {
 		
 		return "shippingAddressCap";
 	}
 	@RequestMapping("/paymentCap")
-public String paymentPage() {
-		
-		return "paymentCap";
-	}
+	public String paymentPage() {
+	
+	return "PaymentCap";
+}
+	@RequestMapping("/paymentSuccess")
+	public String paymentSuccessPage() {
+	
+	return "paymentSuccessfullCap";
+}
+	
 	@RequestMapping("/Wishlist_full")
 	public String productFull2() {
 		
@@ -69,11 +75,8 @@ public String paymentPage() {
 		
 		return "WishList";
 	}
-	@RequestMapping("/target")
-	public String productFull4() {
-		
-		return "target";
-	}
+	
+	
 	
 	
 }
