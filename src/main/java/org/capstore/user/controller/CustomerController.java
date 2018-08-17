@@ -18,4 +18,12 @@ public class CustomerController {
 		
 		return "customHomePage";
 	}
+	
+		
+	@RequestMapping("/logout")
+	public String logout(HttpSession session) {
+		
+		//session.invalidate();
+		return "redirect:/";
+	}
 }

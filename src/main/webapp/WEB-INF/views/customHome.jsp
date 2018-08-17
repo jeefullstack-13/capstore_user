@@ -31,8 +31,8 @@
 
  
     <li><a href="order.jsp" target="cntFrame"> My Orders</a></li>
-      <li><a href="cart.jsp" target="cntFrame"><span class="glyphicon glyphicon-shopping-cart badge"></span> My Cart</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> LogOut</a></li>
+<li><a href="cart.jsp" target="cntFrame"><span class="glyphicon glyphicon-shopping-cart ">MyCart</span>
+      <span class="badge">2 </span> </a></li>      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> LogOut</a></li>
  
     </ul>
   </div>
@@ -50,7 +50,7 @@
     </div>
      
     <div class="col-sm-9 text-left">
-    <iframe name="cntFrame" id="frm" src="" width="900px" height="440px" style="border:none" >
+  <iframe name="cntFrame" id="frm" src="mainPage.jsp"  width="900px" height="440px" style="border:none" scrolling="no">
 	</iframe>
     </div>
      </div>
