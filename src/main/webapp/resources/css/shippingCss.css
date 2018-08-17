@@ -1,0 +1,31 @@
+@charset "ISO-8859-1";
+
+
+p{
+	color:black;
+	font-size: 18px;
+	padding-left: 250px;
+	font-style: italic;
+	
+}
+
+.errMessage{
+color:red;
+font-size: 14px;
+font-weight: bold;
+font-style: italic;
+}
+
+.text{
+	color:black;
+	font-size: 18px;
+	font-style: italic;
+}
+.table1 {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-spacing: 5px; 
+    border-collapse: separate;
+}
+

@@ -7,15 +7,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MerchantController {
 	
 	@RequestMapping("/merchant")
-	public String mainPage() {
+	public String merchantHomeFull() {
 		
-		return "merchant";
+		return "Merchant_home_full";
 	}
 	
-	@RequestMapping("/home")
+	
+	@RequestMapping("/merchantHome")
 	public String homePage() {
 		
-		return "merchant";
+		return "Merchant_home_full";
 	}
 	
 	
