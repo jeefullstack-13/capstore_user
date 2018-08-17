@@ -1,15 +1,51 @@
-<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
 <!------ Include the above in your HEAD tag ---------->
-<html>
-<head>
-<!-- <link rel="stylesheet" type="text/css" href=".\resources\css\myStyle.css"/> -->
-</head>
-<body>
-<!-- <div class="title">
-    Shopping Bag
-  </div> -->
+
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     
+    </div>
+   <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop By Category <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+         <ul class="list-inline">
+          <li><a href="Page1_full">Electronics</a></li><br>
+          <li><a href="#">Clothing</a></li><br>
+          <li><a href="#">Books</a></li>
+        </ul>
+        </ul>
+      </li>
+    
+    </ul>
+    <form class="navbar-form navbar-left" action="/action_page.php">
+    <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search">
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+    </div>
+  </div>
+ </form>
+ 
+    <ul class="nav navbar-nav navbar-right">
+
+ 
+    <li><a href="#"> My Orders</a></li>
+     <li><a href="mycart.com"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+      <li><a href="mycart.com"><span class="glyphicon glyphicon-shopping-cart"></span> My Cart</a></li>
+    
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> LogOut</a></li>
+ 
+    </ul>
+  </div>
+</nav>
+  
+
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-10 col-md-offset-1">
@@ -81,9 +117,10 @@
                             <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
                         </button></td>
                         <td>
-                        <button type="button" class="btn btn-success">
+                        
+                       <a href="shippingAddress"> <button type="button" class="btn btn-success">
                             Checkout <span class="glyphicon glyphicon-play"></span>
-                        </button></td>
+                        </button></a></td>
                     </tr>
                 </tbody>
             </table>
