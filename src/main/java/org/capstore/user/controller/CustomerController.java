@@ -1,10 +1,12 @@
 package org.capstore.user.controller;
 
 
-import org.capstore.user.model.Order;
+import javax.servlet.http.HttpSession;
+
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.client.RestTemplate;
+
 
 @Controller
 public class CustomerController {
@@ -21,9 +23,21 @@ public class CustomerController {
 		
 		return "customHomePage";
 	}
+<<<<<<< HEAD
+
+	
+	@RequestMapping("/logout")
+	public String logout(HttpSession session) {
+		
+		//session.invalidate();
+		return "redirect:/";
+=======
 	@RequestMapping("/order")
 	public String orders() {
 		
 		return "order";
+>>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
 	}
+	
+
 }
