@@ -21,31 +21,44 @@
   <h2 align="center">REMOVE PRODUCTS</h2>
    <br>
   <br>
-  <form style="width: 50%">
+   <form  style="width: 50%">
+   <div class="form-group">
+      <label for="pname">Product Name* : </label>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-primary btn-md">Search</button>
+    </div>
   
-  	<div class="form-group">
-      <label for="mid">Merchant Id: </label>
-      <input type="text" class="form-control" id="mid">
+     <br><br>
+    <div class="form-group">
+      <label for="bname">Brand : </label>
+      <input type="text" class="form-control" id="bname">
     </div>
     
     <div class="form-group">
-      <label for="pid">Product Id: </label>
-      <input type="text" class="form-control" id="pid">
-    </div>
-    
-    <div class="form-group">
-      <label for="pname">Product Name: </label>
-      <input type="text" class="form-control" id="pname">
-    </div>
-    
-    <div class="form-group">
-      <label for="bId">Brand Id:</label>
-      <input type="text" class="form-control" id="bId">
-    </div>
-    
-    <div class="form-group">
-      <label for="catg">Category: </label>
+      <label for="catg">Category : </label>
       <input type="text" class="form-control" id="catg">
+    </div>
+    
+    <div class="form-group">
+      <label for="price">Price : </label>
+      <input type="text" class="form-control" id="price">
+    </div>
+    
+    <div class="form-group">
+      <label for="qty">Quantity : </label>
+      <input type="text" class="form-control" id="qty">
+    </div>
+    
+    <div class="form-group">
+      <label for="desc">Description : </label>
+      <textarea class="form-control" rows="5" id="desc"></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label for="expd">Expiry Date : </label>
+      <input type="date" class="form-control" id="expd">
     </div>
     <br>
     <br>

@@ -29,7 +29,7 @@
     <div class="form-group">
       <label for="pname">Product Name* : </label>
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
+        <input type="text" class="form-control" placeholder="Search" required="required">
       </div>
       <button type="submit" class="btn btn-primary btn-md">Search</button>
     </div>
@@ -70,8 +70,8 @@
     <br>
     <br>
     <div>
-     <button type="button" class="btn btn-primary btn-md">Update</button> 
-     <button type="button" class="btn btn-primary btn-md">Cancel</button> 
+     <input type="submit" class="btn btn-primary btn-md" value="Update">
+     <input type="submit" class="btn btn-primary btn-md" value="Cancel">
     </div>
   </form>
   </div>
