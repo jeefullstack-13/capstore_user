@@ -23,20 +23,12 @@ public class CustomerController {
 		
 		return "customHomePage";
 	}
-<<<<<<< HEAD
-
 	
-	@RequestMapping("/logout")
-	public String logout(HttpSession session) {
-		
-		//session.invalidate();
-		return "redirect:/";
-=======
 	@RequestMapping("/order")
 	public String orders() {
 		
 		return "order";
->>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
+
 	}
 	
 
