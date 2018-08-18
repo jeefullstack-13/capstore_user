@@ -1,11 +1,15 @@
 package org.capstore.user.controller;
 
 import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
 
+import org.capstore.user.model.Customer;
 import org.capstore.user.model.Order;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.client.RestTemplate;
 
@@ -48,10 +52,19 @@ public class CustomerController {
 			return "customerorder";
 			}
 	
-	@RequestMapping("/edit")
-	public String editProfile() {
+	@PutMapping("/edit")
+	public String editProfile(	@Valid @ModelAttribute("cust") Customer cust,
+			BindingResult result) {
 		
-		return null; 
+				if(!result.hasErrors()) {
+			final String uri="http://localhost:8085/capstoreApp/api/v1//profile/{customerId}";
+			RestTemplate restTemplate=new RestTemplate();
+			restTemplate.postForEntity(uri,cust,Customer.class);
+					}
+
+		return "customerProfile"; 
 		
 	}
+	
+	
 }
