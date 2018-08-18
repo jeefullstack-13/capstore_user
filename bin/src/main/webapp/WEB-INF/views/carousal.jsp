@@ -1,5 +1,6 @@
 <div class="container">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:70%; height:40%; margin-top:7%; margin-left:15% ">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" 
+  style="width:70%; height:40%; margin-top:7%; margin-left:15%;">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -9,7 +10,7 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+    <div class="carousel-inner" style="border-radius: 50px;">
       <div class="item active">
         <img src=".\resources\images\welcome.jpg" alt="Los Angeles" style="width:100%;">
       </div>

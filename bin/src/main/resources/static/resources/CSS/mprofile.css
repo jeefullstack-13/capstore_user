@@ -1,8 +1,6 @@
-body {font-family: Arial, Helvetica, sans-serif;}
-
 /* Full-width input fields */
 input[type=text], input[type=password] {
-    width:55%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -10,34 +8,15 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
-.radioContainer #admin
-{
-	margin-left: 170px;
-}
-
-.radioContainer #merchant
-{
-	margin-left: 170px;
-}
-
-
-.radioContainer #customer
-{
-	margin-left: 170px;
-}
-
-
 /* Set a style for all buttons */
 button {
-    background-color: #4CAF50;
+    background-color: #229bdd;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
-    margin-left: 120px;
     border: none;
     cursor: pointer;
-    width: auto;
-    
+    width: 30%;
 }
 
 button:hover {
@@ -54,13 +33,12 @@ button:hover {
 /* Center the image and position the close button */
 .imgcontainer {
     text-align: center;
-    margin: 2px 0 2px 0;
-    position: inherit;
-    size: portrait;
+    margin: 24px 0 12px 0;
+    position: relative;
 }
 
 img.avatar {
-    width: 25%;
+    width: 40%;
     border-radius: 50%;
 }
 
@@ -69,6 +47,7 @@ img.avatar {
 }
 
 span.psw {
+    float: right;
     padding-top: 16px;
 }
 
@@ -79,8 +58,8 @@ span.psw {
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    width: inherit; /* Full width */
-    height: inherit; /* Full height */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */

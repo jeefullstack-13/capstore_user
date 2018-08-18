@@ -55,7 +55,7 @@
         </div>
         <button type="submit" class="btn btn-success btn-block">Enter Chat</button>
     </form>
-    <textarea class="chatbox__message" placeholder="Write something interesting"></textarea>
+    <textarea class="chatbox__message" placeholder="Write something here"></textarea>
 </div>
 
 
