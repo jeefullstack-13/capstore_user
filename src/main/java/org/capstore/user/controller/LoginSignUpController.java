@@ -1,7 +1,16 @@
 package org.capstore.user.controller;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.validation.Valid;
+
+import org.capstore.user.model.Customer;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.client.RestTemplate;
 
 @Controller
 public class LoginSignUpController {
@@ -30,7 +39,7 @@ public class LoginSignUpController {
 	}
 	
 	@RequestMapping("/forgot")
-	public String forgot()
+	public String forgot(@Valid @ModelAttribute("customer") Customer email)
 	{
 		return "forgot";
 	}
@@ -39,6 +48,18 @@ public class LoginSignUpController {
 	public String contactUs()
 	{
 		return "contactUs";
+	}
+	
+	@RequestMapping("/termsandconditions")
+	public String TnC()
+	{
+		return "termsandconditions";
+	}
+	
+	@RequestMapping("/logo_image")
+	public String logo()
+	{
+		return "login";
 	}
 
 	
