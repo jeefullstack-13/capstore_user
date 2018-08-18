@@ -81,6 +81,13 @@ public class MerchantController {
 		
 		return "validategoods";
 		
-	}	
+	}
+	
+	@RequestMapping("/inbox")
+	public String inbox() {
+		
+		return "inbox";
+		
+	}
 	
 }
