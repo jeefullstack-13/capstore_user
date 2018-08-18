@@ -4,6 +4,7 @@
       <li class="active"><a href="merchantHome">Home</a></li>
       
       <li><a href="inventPage" target="cntframe">My Inventory</a></li>
+      <li><a href="inbox" target="cntframe">Inbox</a></li>
       <li><a href="myProfile" target="cntframe">My Profile</a></li>
     </ul>
     <form class="navbar-form navbar-left">
