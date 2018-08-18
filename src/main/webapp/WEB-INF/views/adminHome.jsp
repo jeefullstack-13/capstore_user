@@ -36,14 +36,8 @@
    
          <div class="container ad"> <h4>ADMIN</h4>  </div>
       <ul class="nav navbar-nav">   
-        <li> <form class="navbar-form navbar-left" action="/action_page.php">
-  <div class="input-group">
-    <input type="text" class="form-control" placeholder="Search">
-    <div class="input-group-btn">
-      <button class="btn btn-default" type="submit">
-        <i class="glyphicon glyphicon-search"></i></button>
-    </div>
-  </div></form></li>
+        <li> <form class="navbar-form navbar-left" action="/action_page">
+ </form></li>
         <li><a href="adminCust.jsp" target="adFrame">Customers</a></li>
         <li><a href="merchHome.jsp" target="adFrame">Merchants</a></li>
         <li><a href="inventHome.jsp" target="adFrame">Inventory</a></li>

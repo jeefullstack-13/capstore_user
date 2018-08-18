@@ -1,4 +1,4 @@
- <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
      
@@ -14,7 +14,6 @@
         </ul>
         </ul>
       </li>
-    
     </ul>
     <form class="navbar-form navbar-left" action="/action_page.php">
     <div class="input-group">
@@ -30,28 +29,28 @@
     <ul class="nav navbar-nav navbar-right">
 
  
-    <li><a href="order.jsp" target="cntFrame"> My Orders</a></li>
-      <li><a href="cart.jsp" target="cntFrame"><span class="glyphicon glyphicon-shopping-cart ">MyCart</span>
-      <span class="badge">2 </span> </a></li>
+    <li><a href="customerorder.jsp" target="cntFrame"> My Orders</a></li>
+      <li><a href="customercart.jsp" target="cntFrame"><span class="glyphicon glyphicon-shopping-cart ">MyCart</span></a>
+     </li>
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> LogOut</a></li>
- 
-    </ul>
+     </ul>
   </div>
 </nav>
-  
-  
-<div class="container-fluid text-center">    
+ <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-3 sidenav">
-        <p><img src="./resources/images/profile.png" class="img-circle" width="100px" height="100px"></p>
-      <div class="well"><a href="profile.jsp" target="cntFrame">Edit profile</a></div>
-       <div class="well">
+    <p><img src="./resources/images/profile.png" class="img-circle" width="100px" height="100px"></p>
+      <div class="well"><a href="customerProfile.jsp" target="cntFrame">My Profile</a></div>
+      <div class="well">
+       <p><a href="inbox.jsp" target="cntFrame">Inbox</a></p></div>
+         <div class="well">
        <p><a href="chat.jsp" target="cntFrame">Chat</a></p></div>
-      
+       
+       
     </div>
      
-    <div class="col-sm-9 text-left">
-    <iframe name="cntFrame" id="frm" src="mainPage.jsp"  width="900px" height="440px" style="border:none" scrolling="no">
+     <div class="col-sm-9 text-left">
+    <iframe name="cntFrame" id="frm" src="mainPage.jsp"  width="900px" height="440px" style="border:none" >
 	</iframe>
     </div>
      </div>
