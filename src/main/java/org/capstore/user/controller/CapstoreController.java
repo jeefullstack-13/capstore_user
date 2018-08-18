@@ -30,15 +30,6 @@ public class CapstoreController {
 
 		
 		
-			
-			final String uri="http://localhost:8084/capstoreApp/api/v1/products";
-			RestTemplate restTemplate=new RestTemplate();
-			
-			Inventory[] inventories= restTemplate.getForObject(uri, Inventory[].class);
-			
-			
-			map.put("inventories",inventories);
-			//map.put("pilot", new Inventory());
 		
 		return "Page1_full";
 	}
