@@ -39,7 +39,7 @@
       </div>
     </div>
     <div class="col-sm-9 text -left">
-		<iframe name="custFrame" width="970px" height="440px" style="border:none"></iframe>
+		<iframe name="custFrame" width="970px" height="400px" style="border:none"></iframe>
     </div>
   </div>
 </div>

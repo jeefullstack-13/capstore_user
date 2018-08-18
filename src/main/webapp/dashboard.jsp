@@ -33,6 +33,9 @@
         </div>
        <h3>DASHBOARD</h3>
         <p>Statistics</p>
+        <div>
+        <h4 align="right"> <a href="adminRevenue.jsp">  Calculate Revenue>>></a></h4>
+        </div>
       </div>
       <div class="row">
         <div class="col-sm-3">
