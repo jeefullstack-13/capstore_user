@@ -30,11 +30,11 @@
          <li class="active"><a href="DeliveryStatus.jsp" target="custFrame">Update Delivery Status</a></li>
       </ul><br>
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search for a customer..">
+        <input type="text" class="form-control" id="searchTerm"placeholder="Search for a customer.." >
         <span class="input-group-btn">
-          <button class="btn btn-default" type="button">
+         <a href="admincustomer" id="searchCust"> <button class="btn btn-default" type="button" onclick="document.getElementById('searchCust').href='admincustomer/' + document.getElementById('searchTerm').value;" > 
             <span class="glyphicon glyphicon-search"></span>
-          </button>
+          </button></a>
         </span>
       </div>
     </div>

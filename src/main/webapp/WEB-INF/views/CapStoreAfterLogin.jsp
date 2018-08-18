@@ -20,11 +20,12 @@
     </ul>
     <form class="navbar-form navbar-left" action="/action_page.php">
     <div class="input-group">
-    <input type="text" class="form-control" placeholder="Search">
+    <input type="text" class="form-control" placeholder="Search" id="searchTerm1"> >
     <div class="input-group-btn">
-      <button class="btn btn-default" type="submit">
+      <!-- <button class="btn btn-default" type="submit"> -->
+      <a href="admininventory" id="searchMerch"> <button class="btn btn-default" type="button" onclick="document.getElementById('searchMerch').href='admininventory/' + document.getElementById('searchTerm1').value;" > 
         <i class="glyphicon glyphicon-search"></i>
-      </button>
+      </button></a>
     </div>
   </div>
  </form>
