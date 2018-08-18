@@ -3,13 +3,10 @@
     position: fixed;
     bottom: 0;
     right: 30px;
-<<<<<<< HEAD
     width: auto;
     height: auto;
-=======
     width: inherit;
     height: inherit;
->>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
     background-color: #fff;
     font-family: 'Lato', sans-serif;
 
