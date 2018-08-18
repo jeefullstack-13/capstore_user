@@ -4,7 +4,10 @@
      
     </div>
    <ul class="nav navbar-nav">
+<<<<<<< HEAD
+=======
 
+>>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
       <li class="active"><a href="mainPage.jsp" target="cntFrame">Home</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop By Category <span class="caret"></span></a>
         <ul class="dropdown-menu">
@@ -53,6 +56,8 @@
      
     <div class="col-sm-9 text-left">
     <iframe name="cntFrame" id="frm" src="mainPage.jsp"  width="900px" height="440px" style="border:none" scrolling="no">
+<<<<<<< HEAD
+=======
 
       <li class="active"><a href="#">Home</a></li>
 
@@ -110,6 +115,7 @@
 
     <iframe name="cntFrame" id="frm" src="mainPage.jsp"  width="900px" height="440px" style="border:none" scrolling="no">
 
+>>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
 	</iframe>
     </div>
      </div>
