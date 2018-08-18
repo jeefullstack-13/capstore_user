@@ -40,6 +40,18 @@ public class LoginSignUpController {
 	{
 		return "contactUs";
 	}
+	
+	@RequestMapping("/termsandconditions")
+	public String TnC()
+	{
+		return "termsandconditions";
+	}
+	
+	@RequestMapping("/logo_image")
+	public String logo()
+	{
+		return "login";
+	}
 
 	
 }

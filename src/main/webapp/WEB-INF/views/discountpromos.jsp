@@ -42,39 +42,41 @@ function myFunction() {
     
     <div class="form-group">
       <label for="pid">Product Name* : </label>
-      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Product Names" class="form-control">
+      <input type="text" id="myInput" onkeyup="myFunction()" required="required" placeholder="Search for Product Names" class="form-control">
     </div>
     
     
     <div class="form-group">
       <label for="pid">Promo Name* : </label>
-      <textarea class="form-control" rows="5" id="desc"></textarea>
+      <textarea class="form-control" rows="5" id="desc" required="required"></textarea>
     </div>
     
     <div class="form-group">
       <label for="pamt">Promo Amount* : </label>
-      <input type="text" class="form-control" id="pamt">
+      <input type="text" class="form-control" id="pamt" pattern="[0-9]+(\\.[0-9][0-9]?)?" 
+      title="Promo Amount should not contain any text or special character" required="required">
     </div>
     
     <div class="form-group">
       <label for="pamt">Discount Percent(%)* : </label>
-      <input type="text" class="form-control" id="pamt">
+      <input type="text" class="form-control" id="pamt" pattern="[0-9]+(\\.[0-9][0-9]?)?" 
+      title="Discount should be in number only" required="required">
     </div>
     
     <div class="form-group">
       <label for="doi">Issue Date* : </label>
-      <input type="date" class="form-control" id="doi">
+      <input type="date" class="form-control" id="doi" required="required">
     </div>
     
     <div class="form-group">
       <label for="expd">Expiry Date* : </label>
-      <input type="date" class="form-control" id="expd">
+      <input type="date" class="form-control" id="expd" required="required">
     </div>
     <br>
     <br>
     <div>
-     <button type="button" class="btn btn-primary btn-md">Apply</button> 
-     <button type="button" class="btn btn-primary btn-md">Cancel</button> 
+     <input type="submit" class="btn btn-primary btn-md" value="Apply">
+     <input type="submit" class="btn btn-primary btn-md" value="Cancel">
     </div>
   </form>
 </div>

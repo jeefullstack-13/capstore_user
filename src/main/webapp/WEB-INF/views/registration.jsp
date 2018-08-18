@@ -1,79 +1,84 @@
-<button onclick="document.getElementById('id02').style.display='block'" style="width:auto; float:left; margin-top:20%; margin-left: 0%;">SignUp</button>
+<button onclick="document.getElementById('id02').style.display='block'" 
+		style="width:auto; float:right; margin-top:20%; margin-left: 0%; background-color:red;">SignUp
+</button>
 <div id="id02" class="modal">
    <form class="modal-content animate" >
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-    </div>
-	<div class="radioContainer">
-	<input type="radio" name="selectuser" value="1" id="merchantreg" onclick=selectRView()>Merchant
-	<input type="radio" name="selectuser" value="2" id="customerreg" onclick=selectRView()>Customer
-	</div>
+    	<div class="imgcontainer">
+     		 <span onclick="document.getElementById('id02').style.display='none'" class="close" 
+     		 title="Close Modal">&times;</span>
+      		<img src=".\resources\images\login_avatar.png" alt="Avatar" class="avatar">
+    	</div>
+		<div class="radioContainer">
+			<input type="radio" name="selectuser" value="1" id="merchantreg" onclick=selectRView()>Merchant
+			<input type="radio" name="selectuser" value="2" id="customerreg" onclick=selectRView()>Customer
+		</div>
 	
 	
 	
-    <div class="container" id="regMerchant" style="display:none">
+<div class="container" id="regMerchant" style="display:none">
     <div>
-     <label for="mname"><b>Merchant Name</b></label>
-      <br>
-      <input type="text" placeholder="Enter Username" name="mname" required>
+     	<label for="mname"><b>Merchant Name</b></label>
+      	<br>
+      	<input type="text" placeholder="Enter Username" name="mname" required>
     </div>  
-	  <div>
-     <label for="mconame"><b>Company Name</b></label>
-      <br>
-      <input type="text" placeholder="Enter company name" name="mconame" required>
+    
+	 <div>
+     	<label for="mconame"><b>Company Name</b></label>
+      	<br>
+     	<input type="text" placeholder="Enter company name" name="mconame" required>
     </div> 
 	<div>
-	  <label for="memail"><b>Email</b></label>
-	  <br>
-      <input type="text" placeholder="Enter Email" name="memail" required>
+	  	<label for="memail"><b>Email</b></label>
+	  	<br>
+      	<input type="text" placeholder="Enter Email" name="memail" required>
     </div>  
       
     <div>
-      <label for="mphoneno"><b>Phone Number</b></label>
-      <br>
-      <input type="text" placeholder="Enter PhoneNo" name="mphoneno" required>
+      	<label for="mphoneno"><b>Phone Number</b></label>
+      	<br>
+      	<input type="text" placeholder="Enter PhoneNo" name="mphoneno" required>
     </div>  
       
-      <br>
     <div>
-      <label for="maddress"><b>Address</b></label>
-        <br>
-      <textarea placeholder="Enter Address" name="madd" required></textarea>
+      	<label for="maddress"><b>Address</b></label>
+      	<br>
+      	<textarea placeholder="Enter Address" name="madd" style="border-radius: 15px;"></textarea>
     </div>  
      
     <div>
-      <label for="mpsw"><b>Password</b></label>
-       <br>
-      <input type="password" placeholder="Enter Password" name="mpsw" required>
+      	<label for="mpsw"><b>Password</b></label>
+       	<br>
+      	<input type="password" placeholder="Enter Password" name="mpsw" required>
     </div>  
-      <br>
+
     <div> 
-       <label for="mcpsw"><b> Confirm Password</b></label>
-       <br>
-      <input type="password" placeholder="Enter Password" name="mcpsw" required>
+       	<label for="mcpsw"><b> Confirm Password</b></label>
+       	<br>
+      	<input type="password" placeholder="Enter Password" name="mcpsw" required>
     </div>  
+    
     <div> 
-       <label for="mcpsw"><b> Is CapStore Certified</b></label>
-       <br>
-      <input type="radio" name="ismc" value="yes" required>Yes
-      <input type="radio" name="ismc" value="no" >No
+       	<label for="misc"><b> Is CapStore Certified</b></label>
+       	<br>
+      	<input type="radio" name="ismc" value="yes" required>Yes
+      	<input type="radio" name="ismc" value="no" required>No
     </div>  
     
     <div>
-      <label>
+      	<label>
         <input type="checkbox" checked="checked" name="remember" > Remember me
-      </label>
+      	</label>
     </div>  
-      <br>
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-    </div>
+      	<br>
+      	<p>By creating an account you agree to our <a href="termsandconditions" style="color:dodgerblue">Terms & Privacy</a>.</p>
+</div>
   	 
   	 
   	 
   	 
   	 
-  	 <div class="container" id="regCustomer" style="display:none">
- <div>
+ <div class="container" id="regCustomer" style="display:none">
+ 	<div>
      <label for="uname"><b>Customer Name</b></label>
       <br>
       <input type="text" placeholder="Enter Username" name="uname" required>
@@ -94,13 +99,13 @@
     <div>
       <label for="dob"><b>Date of Birth</b></label>
       <br>
-      <input type="date" placeholder="Enter DOB" name="dob" required>
+      <input type="date" placeholder="Enter DOB" name="dob" style="border-radius: 15px;" required>
     </div>  
       <br>
     <div>
       <label for="address"><b>Address</b></label>
         <br>
-      <textarea placeholder="Enter Address" name="add" required></textarea>
+      <textarea placeholder="Enter Address" name="add" style="border-radius: 15px;" required></textarea>
     </div>  
      
     <div>
@@ -121,7 +126,7 @@
       </label>
     </div>  
       <br>
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      <p>By creating an account you agree to our <a href="termsandconditions" style="color:dodgerblue">Terms & Privacy</a>.</p>
     </div>  
     <div class="container" style="background-color:#f1f1f1; width: auto;" >
       <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
