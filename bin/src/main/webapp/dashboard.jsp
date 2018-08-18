@@ -39,14 +39,14 @@
           <div class="well">
             <img src="./resources/images/customersreg.png" class="img-circle" alt="Customers Logo" width="50" height="50"> 
              <h4>Total Customers Registered</h4>
-            <p>1 Million</p> 
+            <p> 0 </p> 
           </div>
         </div>
         <div class="col-sm-3">
           <div class="well">
            <img src="./resources/images/merchantlogo.png" class="img-circle" alt="Merchants Logo" width="50" height="50"> 
             <h4>Total Merchants Registered</h4>
-            <p>100 Million</p> 
+            <p> 0 </p> 
           </div>
         </div>
         <div class="col-sm-3">
@@ -54,14 +54,14 @@
             
              <img src="./resources/images/itemsold.png" class="img-circle" alt="Sold items" width="50" height="50"> 
            <h4>Items sold on our website</h4>
-            <p>10 Million</p> 
+            <p>     0   </p> 
           </div>
         </div>
         <div class="col-sm-3">
           <div class="well">
            <img src="./resources/images/profit.png" class="img-circle" alt="Profit Logo" width="50" height="50">
             <h4>Net Profit</h4>
-            <p>30%</p> 
+            <p>   0  </p> 
           </div>
         </div>
         </div>

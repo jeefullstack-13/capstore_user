@@ -1,16 +1,15 @@
 package org.capstore.user.controller;
 
+import org.capstore.user.model.Inventory;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.client.RestTemplate;
 
 @Controller
 public class CapstoreController {
 
-	@RequestMapping("/CapStoreAfterLogin")
-	public String capStoreAfterLogin() {
-		
-		return "CapStoreAfterLogin";
-	}
+	
 	@RequestMapping("/CapStoreHomeAfter1")
 	public String capStoreHomeFull1() {
 		
@@ -24,23 +23,27 @@ public class CapstoreController {
 		return "CapStoreHome_full";
 	}
 	
-	@RequestMapping("/CapStoreHome")
-	public String capStoreHome() {
-		
-		return "CapStoreHome";
-	}
+	
 	
 	@RequestMapping("/Page1_full")
-	public String page1() {
+	public String page1(ModelMap map) {
+
+		
+		
+			
+			final String uri="http://localhost:8084/capstoreApp/api/v1/products";
+			RestTemplate restTemplate=new RestTemplate();
+			
+			Inventory[] inventories= restTemplate.getForObject(uri, Inventory[].class);
+			
+			
+			map.put("inventories",inventories);
+			//map.put("pilot", new Inventory());
 		
 		return "Page1_full";
 	}
 	
-	@RequestMapping("/product")
-	public String product() {
-		
-		return "product";
-	}
+	
 	
 	@RequestMapping("/Product_full")
 	public String productFull() {
@@ -70,11 +73,7 @@ public class CapstoreController {
 		
 		return "Wishlist_full";
 	}
-	@RequestMapping("/WishList")
-	public String productFull3() {
-		
-		return "WishList";
-	}
+	
 	
 	
 	
