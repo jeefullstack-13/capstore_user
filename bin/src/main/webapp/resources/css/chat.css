@@ -2,9 +2,17 @@
 .chatbox {
     position: fixed;
     bottom: 0;
+<<<<<<< HEAD
     right: 30px;
-    width: 200px;
-    height: 400px;
+    width: auto;
+    height: auto;
+=======
+    right: 30px;
+    width: auto;
+    height: auto;
+    width: inherit;
+    height: inherit;
+>>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
     background-color: #fff;
     font-family: 'Lato', sans-serif;
 

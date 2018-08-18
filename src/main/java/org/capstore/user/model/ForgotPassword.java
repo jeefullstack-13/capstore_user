@@ -4,6 +4,7 @@ import java.util.Date;
 
 
 public class ForgotPassword {
+	
 private int fID;
 private String emailId;
 private String link;

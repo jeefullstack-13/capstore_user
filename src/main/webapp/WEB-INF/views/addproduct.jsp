@@ -24,7 +24,8 @@
     
     <div class="form-group">
       <label for="pname">Product Name* : </label>
-      <input type="text" class="form-control" id="pname">
+      <input type="text" class="form-control" id="pname" pattern="[A-Za-z]{3,}" 
+      title="Name should not contain any number or special character" required="required">
     </div>
    
     <div class="form-group">
@@ -43,22 +44,24 @@
     
     <div class="form-group">
       <label for="price">Price* : </label>
-      <input type="text" class="form-control" id="price">
+      <input type="text" class="form-control" id="price" pattern="[0-9]+(\\.[0-9][0-9]?)?" 
+      title="Price should not contain any text or special character" required="required">
     </div>
     
     <div class="form-group">
       <label for="qty">Quantity* : </label>
-      <input type="text" class="form-control" id="qty">
+      <input type="text" class="form-control" id="qty" pattern="[0-9]+(\\.[0-9][0-9]?)?"
+      title="Quantity should not contain any text or special character" required="required">
     </div>
     
     <div class="form-group">
       <label for="desc">Description* : </label>
-      <textarea class="form-control" rows="5" id="desc"></textarea>
+      <textarea class="form-control" rows="5" id="desc" required="required"></textarea>
     </div>
     
     <div class="form-group">
       <label for="expd">Expiry Date* : </label>
-      <input type="date" class="form-control" id="expd">
+      <input type="date" class="form-control" id="expd" required="required">
     </div>
     <div>
    <button type="button" class="btn btn-primary btn-md">Upload Image</button> 
@@ -66,8 +69,8 @@
     <br>
     <br>
     <div>
-     <button type="button" class="btn btn-primary btn-md">Add</button> 
-     <button type="button" class="btn btn-primary btn-md">Cancel</button> 
+     <input type="submit" class="btn btn-primary btn-md" value="Add">
+     <input type="submit" class="btn btn-primary btn-md" value="Cancel">
     </div>
   </form>
 </div>

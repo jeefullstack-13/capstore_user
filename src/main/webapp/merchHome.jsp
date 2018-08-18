@@ -28,11 +28,12 @@
         <li class="active"><a href="validMerch.jsp" target="merchFrame">Validate Merchant</a></li>
       </ul><br>
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search for a Merchant..">
+        <input type="text" class="form-control" id="searchTerm1" placeholder="Search for a Merchant..">
         <span class="input-group-btn">
-          <button class="btn btn-default" type="button">
+        <!--   <button class="btn btn-default" type="button"> -->
+           <a href="adminmerchant" id="searchMerch"> <button class="btn btn-default" type="button" onclick="document.getElementById('searchMerch').href='adminmerchant/' + document.getElementById('searchTerm1').value;" > 
             <span class="glyphicon glyphicon-search"></span>
-          </button>
+          </button></a>
         </span>
       </div>
     </div>

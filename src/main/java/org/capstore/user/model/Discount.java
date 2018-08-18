@@ -4,14 +4,17 @@ import java.util.Date;
 
 
 public class Discount {
+	
 	private int discountId;
+	
 	private Inventory inventory;
-	private Category category;
 	private double promoAmount;
 	private int discountPercent;
 	private Date issueDate;
 	private Date expiryDate;
 	private String promoName;
+	
+	private InvoiceProduct invoiceProduct;
 	public int getDiscountId() {
 		return discountId;
 	}
@@ -49,11 +52,14 @@ public class Discount {
 		this.expiryDate = expiryDate;
 	}
 	
-	public Category getCategory() {
-		return category;
+	public Discount() {
+		
 	}
-	public void setCategory(Category category) {
-		this.category = category;
+	public InvoiceProduct getInvoiceProduct() {
+		return invoiceProduct;
+	}
+	public void setInvoiceProduct(InvoiceProduct invoiceProduct) {
+		this.invoiceProduct = invoiceProduct;
 	}
 	
 	public String getPromoName() {
@@ -62,21 +68,19 @@ public class Discount {
 	public void setPromoName(String promoName) {
 		this.promoName = promoName;
 	}
-	
-	public Discount(int discountId, Inventory inventory, Category category, double promoAmount, int discountPercent,
-			Date issueDate, Date expiryDate, String promoName) {
+	public Discount(int discountId, Inventory inventory, double promoAmount, int discountPercent, Date issueDate,
+			Date expiryDate, String promoName, InvoiceProduct invoiceProduct) {
 		super();
 		this.discountId = discountId;
 		this.inventory = inventory;
-		this.category = category;
 		this.promoAmount = promoAmount;
 		this.discountPercent = discountPercent;
 		this.issueDate = issueDate;
 		this.expiryDate = expiryDate;
 		this.promoName = promoName;
+		this.invoiceProduct = invoiceProduct;
 	}
-	public Discount() {
-		
-	}
+	
+	
 	
 }

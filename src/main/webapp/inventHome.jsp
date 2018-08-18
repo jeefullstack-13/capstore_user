@@ -38,11 +38,12 @@
       </ul>
       <br>
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search for a product..">
+        <input type="text" class="form-control" id="searchTerm" placeholder="Search for a product..">
         <span class="input-group-btn">
-          <button class="btn btn-default" type="button">
+          <!-- <button class="btn btn-default" type="button"> -->
+           <a href="admininventory" id="searchInv"> <button class="btn btn-default" type="button" onclick="document.getElementById('searchInv').href='admininventory/' + document.getElementById('searchTerm').value;" > 
             <span class="glyphicon glyphicon-search"></span>
-          </button>
+          </button></a>
         </span>
       </div>
     </div>

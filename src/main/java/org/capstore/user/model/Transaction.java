@@ -1,26 +1,55 @@
 package org.capstore.user.model;
 
+import java.util.Date;
+
 
 public class Transaction {
+		
 private int transactionId;
+	
 private Order order;
 private double amount;
 private String modeOfPurchase;
 private String status;
+private Date transactionDate;
+
 
 private ReturnOrders returnOrder;
 
+
+private GenerateInvoice generateInvoice;
+
+private RefundMoney refundMoney;
 public Transaction() {
 	
 }
 
-public Transaction(int transactionId, Order order, double amount, String modeOfPurchase, String status) {
-	
-	this.transactionId = transactionId;
-	this.order = order;
-	this.amount = amount;
-	this.modeOfPurchase = modeOfPurchase;
-	this.status = status;
+
+public RefundMoney getRefundMoney() {
+	return refundMoney;
+}
+
+
+public void setRefundMoney(RefundMoney refundMoney) {
+	this.refundMoney = refundMoney;
+}
+
+
+public Date getTransactionDate() {
+	return transactionDate;
+}
+
+
+public void setTransactionDate(Date transactionDate) {
+	this.transactionDate = transactionDate;
+}
+
+public GenerateInvoice getGenerateInvoice() {
+	return generateInvoice;
+}
+
+public void setGenerateInvoice(GenerateInvoice generateInvoice) {
+	this.generateInvoice = generateInvoice;
 }
 
 public int getTransactionId() {
@@ -69,6 +98,22 @@ public ReturnOrders getReturnOrder() {
 public void setReturnOrder(ReturnOrders returnOrder) {
 	this.returnOrder = returnOrder;
 }
+
+
+public Transaction(int transactionId, Order order, double amount, String modeOfPurchase, String status,
+		Date transactionDate, ReturnOrders returnOrder, GenerateInvoice generateInvoice, RefundMoney refundMoney) {
+	super();
+	this.transactionId = transactionId;
+	this.order = order;
+	this.amount = amount;
+	this.modeOfPurchase = modeOfPurchase;
+	this.status = status;
+	this.transactionDate = transactionDate;
+	this.returnOrder = returnOrder;
+	this.generateInvoice = generateInvoice;
+	this.refundMoney = refundMoney;
+}
+
 }
  
 	

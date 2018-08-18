@@ -2,15 +2,18 @@ package org.capstore.user.model;
 
 import java.util.Date;
 
-
 public class Coupons {
+	
 private int couponId;
 private String couponCode;
 private double couponAmount;
 private String couponDescription;
 private Date issueDate;
 private Date expiryDate;
+
 private Inventory inventory;
+
+private GenerateInvoice generateInvoice; 
 
 public int getCouponId() {
 	return couponId;

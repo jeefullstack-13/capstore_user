@@ -1,10 +1,10 @@
 package org.capstore.user.model;
 
 
-
 public class Category {
 private int categoryId;
 private String categoryName;
+
 private Discount dis;
 
 public int getCategoryId() {

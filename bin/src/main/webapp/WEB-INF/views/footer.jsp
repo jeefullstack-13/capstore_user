@@ -30,9 +30,9 @@
                 <div class="col-sm-3 myCols">
                     <h5>Legal</h5>
                     <ul>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="termsandconditions">Terms of Service</a></li>
+                        <li><a href="termsandconditions">Terms of Use</a></li>
+                        <li><a href="termsandconditions">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,7 +46,7 @@
             <p>© 2018 Copyright Text : www.capstore.com </p>
         </div>
         <div class="container-fluid text-center">
-        <a href="#myPage" title="To Top">
+        <a href="#" title="To Top">
  		   <span class="glyphicon glyphicon-chevron-up"></span>
   		</a>
   		</div>
