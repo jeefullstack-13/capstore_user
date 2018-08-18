@@ -2,7 +2,9 @@ package org.capstore.user.model;
 
 
 public class ProductImages {
+	
 	private int imageId;
+	
 	private Inventory inventory;
 	private String uploadimage;
 	private String url;

@@ -5,6 +5,7 @@ import java.util.List;
 
 
 public class Merchant {
+	
 	private int merchantId;
 	private String name;
 	private String companyName;
@@ -12,7 +13,7 @@ public class Merchant {
 	private String emailId;
 	private String password;
 	private boolean isCertified;
-	private String isActive;
+	private boolean isActive;
 	private String status;
 	private Date lastLogin; 
 	
@@ -21,12 +22,21 @@ public class Merchant {
 	private List<Inventory> inventory;
 	
 	private List<FeedBack> feedback;
+	
+	private List<ReturnOrders> returnOrder;
 	public Merchant() {
 		
 	}
+	
+	
+	
+	
+
+
+
 	public Merchant(int merchantId, String name, String companyName, String phoneNo, String emailId, String password,
-			boolean isCertified, String isActive, String status, Date lastLogin, List<Address> address,
-			List<Inventory> inventory, List<FeedBack> feedback) {
+			boolean isCertified, boolean isActive, String status, Date lastLogin, List<Address> address,
+			List<Inventory> inventory, List<FeedBack> feedback, List<ReturnOrders> returnOrder) {
 		super();
 		this.merchantId = merchantId;
 		this.name = name;
@@ -41,7 +51,27 @@ public class Merchant {
 		this.address = address;
 		this.inventory = inventory;
 		this.feedback = feedback;
+		this.returnOrder = returnOrder;
 	}
+
+
+
+
+
+
+
+	public List<ReturnOrders> getReturnOrder() {
+		return returnOrder;
+	}
+
+
+
+	public void setReturnOrder(List<ReturnOrders> returnOrder) {
+		this.returnOrder = returnOrder;
+	}
+
+
+
 	public int getMerchantId() {
 		return merchantId;
 	}
@@ -84,13 +114,17 @@ public class Merchant {
 	public void setCertified(boolean isCertified) {
 		this.isCertified = isCertified;
 	}
-	public String getIsActive() {
+	
+	public boolean isActive() {
 		return isActive;
 	}
-	public void setIsActive(String isActive) {
+
+
+public void setActive(boolean isActive) {
 		this.isActive = isActive;
 	}
-	public String getStatus() {
+
+public String getStatus() {
 		return status;
 	}
 	public void setStatus(String status) {
