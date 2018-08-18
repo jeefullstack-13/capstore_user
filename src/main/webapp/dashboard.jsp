@@ -33,9 +33,11 @@
         </div>
        <h3>DASHBOARD</h3>
         <p>Statistics</p>
-        <div>
-        <h4 align="right"> <a href="adminRevenue.jsp">  Calculate Revenue>>></a></h4>
-        </div>
+         <div>
+       <h4 align="right"> <a href="adminInbox.jsp" target="adFrame">  Inbox>>></a></h4>
+       <h4 align="right"> <a href="adminCompose.jsp" target="adFrame">  Compose E-mail>>></a></h4>
+        <h4 align="right"> <a href="adminRevenue.jsp" target="adFrame">  Calculate Revenue>>></a></h4>
+       </div>
       </div>
       <div class="row">
         <div class="col-sm-3">
@@ -81,7 +83,8 @@
         </div>
           <div class="col-sm-3">
           <div class="well">
-              <h4><a href=" ">Promotions</a></h4>
+              <h4><a href=" ">Add Promotions</a></h4>
+               <h4><a href=" ">Send Promotions</a></h4>
       </div>
           </div>
              <div class="col-sm-3">
