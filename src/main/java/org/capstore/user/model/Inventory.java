@@ -4,26 +4,23 @@ import java.util.Date;
 import java.util.List;
 
 
-
-
 public class Inventory {
+	
 	private int productId;
 	private String productName;
 	private String description;
-	
-	private Brand brand;
+	private int brandId;
 	
 	private Merchant merchant;
-	
 	private int noOfViews;
 	private String Category;
 	private Date dateOfInclusion;
 	private double price;
 	
 	private List<ProductImages> uploadimage;
-	
 	private int quantity;
 	private Date expiryDate;
+	
 	private ManagingCart managingCart;
 	
 	private Discount discount;
@@ -32,11 +29,16 @@ public class Inventory {
 	
 	private List<FeedBack> feedback;
 	
-	private WishList wishList;
+	
+	private List<WishList> wishList;
+	
+	
+	private InvoiceProduct invoiceProduct;
 	
 	public Inventory() {
 		
 	}
+	
 	public int getProductId() {
 		return productId;
 	}
@@ -55,11 +57,11 @@ public class Inventory {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public Brand getBrand() {
-		return brand;
+	public int getBrandId() {
+		return brandId;
 	}
-	public void setBrand(Brand brand) {
-		this.brand = brand;
+	public void setBrandId(int brandId) {
+		this.brandId = brandId;
 	}
 	public Merchant getMerchant() {
 		return merchant;
@@ -133,21 +135,33 @@ public class Inventory {
 	public void setFeedback(List<FeedBack> feedback) {
 		this.feedback = feedback;
 	}
-	public WishList getWishList() {
+	
+
+	public List<WishList> getWishList() {
 		return wishList;
 	}
-	public void setWishList(WishList wishList) {
+
+	public void setWishList(List<WishList> wishList) {
 		this.wishList = wishList;
 	}
-	public Inventory(int productId, String productName, String description, Brand brand, Merchant merchant,
+
+	public InvoiceProduct getInvoiceProduct() {
+		return invoiceProduct;
+	}
+
+	public void setInvoiceProduct(InvoiceProduct invoiceProduct) {
+		this.invoiceProduct = invoiceProduct;
+	}
+
+	public Inventory(int productId, String productName, String description, int brandId, Merchant merchant,
 			int noOfViews, String category, Date dateOfInclusion, double price, List<ProductImages> uploadimage,
 			int quantity, Date expiryDate, ManagingCart managingCart, Discount discount, Coupons coupon,
-			List<FeedBack> feedback, WishList wishList) {
+			List<FeedBack> feedback, List<WishList> wishList, InvoiceProduct invoiceProduct) {
 		super();
 		this.productId = productId;
 		this.productName = productName;
 		this.description = description;
-		this.brand = brand;
+		this.brandId = brandId;
 		this.merchant = merchant;
 		this.noOfViews = noOfViews;
 		Category = category;
@@ -161,7 +175,14 @@ public class Inventory {
 		this.coupon = coupon;
 		this.feedback = feedback;
 		this.wishList = wishList;
+		this.invoiceProduct = invoiceProduct;
 	}
+	
+	
+
+	
+	
+
 	
 
 	

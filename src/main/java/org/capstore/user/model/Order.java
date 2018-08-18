@@ -3,6 +3,8 @@ package org.capstore.user.model;
 import java.util.Date;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 
 public class Order{
 	
@@ -11,18 +13,21 @@ public class Order{
 	private Customer customer;
 	
 	private  List<ManagingCart> managingCart;
-	
+	@JsonFormat(pattern="dd-MMM-yyyy")
 	private Date orderDate;
+	@JsonFormat(pattern="dd-MMM-yyyy")
 	private Date deliveredDate;
 	
 	private Shipping shipping;
-	
 	private String deliveryStatus;
 	
 	private Transaction transaction;
 	
+	
 	private ReturnOrders returnOrder;
 	
+	
+	private GenerateInvoice generateInvoice;
 	public ReturnOrders getReturnOrder() {
 		return returnOrder;
 	}
@@ -78,8 +83,12 @@ public class Order{
 		this.transaction = transaction;
 	}
 	
+	public Order() {
+		super();
+	}
 	public Order(int orderId, Customer customer, List<ManagingCart> managingCart, Date orderDate, Date deliveredDate,
-			Shipping shipping, String deliveryStatus, Transaction transaction, ReturnOrders returnOrder) {
+			Shipping shipping, String deliveryStatus, Transaction transaction, ReturnOrders returnOrder,
+			GenerateInvoice generateInvoice) {
 		super();
 		this.orderId = orderId;
 		this.customer = customer;
@@ -90,9 +99,13 @@ public class Order{
 		this.deliveryStatus = deliveryStatus;
 		this.transaction = transaction;
 		this.returnOrder = returnOrder;
+		this.generateInvoice = generateInvoice;
 	}
-	public Order() {
-		super();
+	public GenerateInvoice getGenerateInvoice() {
+		return generateInvoice;
+	}
+	public void setGenerateInvoice(GenerateInvoice generateInvoice) {
+		this.generateInvoice = generateInvoice;
 	}
 	
 	
