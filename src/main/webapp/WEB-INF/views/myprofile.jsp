@@ -55,32 +55,135 @@ class="close" title="Close Modal">&times;</span>
     </div>
 
     <div class="container" style="margin-left: 0px; width: auto;">
+    
     <div class="form-group" align="justify">
       <label class="control-label col-sm-2" for="name">Name:</label>
       <div class="col-sm-10">
-        <input type="email" class="form-control" id="name" placeholder="Enter name" name="name">
+        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
       </div>
     </div>
+    
     
     <div class="form-group" align="justify">
       <label class="control-label col-sm-2" for="compname">Company Name:</label>
       <div class="col-sm-10">          
-        <input type="password" class="form-control" id="compname" placeholder="Enter Company Name" name="compname">
+        <input type="text" class="form-control" id="compname" placeholder="Enter Company Name" name="compname">
       </div>
     </div>
     
+    
     <div class="form-group" align="justify">
-      <label class="control-label col-sm-2" for="addr">Address:</label>
-      <div class="col-sm-10">   
-      <textarea class="form-control" rows="5" class="form-control" id="addr" placeholder="Enter Address" name="addr"></textarea>       
-      
+      <label class="control-label col-sm-2" for="compname">Street No.:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="compname" placeholder="Enter Company Name" name="compname">
       </div>
     </div>
+    
+
+    <div class="form-group" align="justify">
+      <label class="control-label col-sm-2" for="addr">City: </label>
+      <div class="col-sm-10">   
+         <select name="ccity" class="form-control" id="addr">
+      		<option>Mumbai</option>
+      		<option>Delhi</option>
+      		<option>Bangalore</option>
+      		<option>Hyderabad</option>
+      		<option>Ahmedabad</option>
+      		<option>Chennai</option>
+      		<option>Kolkata</option>
+      		<option>Surat</option>
+      		<option>Pune</option>
+      		<option>Jaipur</option>
+      		<option>Lucknow</option>
+      		<option>Kanpur</option>
+      		<option>Nagpur</option>
+      		<option>Visakhapatnam</option>
+      		<option>Indore</option>
+      		<option>Thane</option>
+      		<option>SriGanganagar</option>
+      		<option>Bhatinda</option>
+      		<option>Udaipur</option>
+      		<option>Jaipur</option>
+      		<option>Patiala</option>
+      	</select>      
+      </div>
+    </div>
+    
+  <div></div>
+    
+     <div class="form-group" align="justify">
+      <label class="control-label col-sm-2" for="addr">State: </label>
+      <div class="col-sm-10">   
+      <select name="cstate" class="form-control" class="select" id="addr">
+      		<option>Andhra Pradesh</option>
+      		<option>Bihar</option>
+      		<option>Chattisgarh</option>
+      		<option>Goa</option>
+      		<option>Gujarat</option>
+      		<option>Haryana</option>
+      		<option>Himachal Pradesh</option>
+      		<option>Jammu and Kashmir</option>
+      		<option>Jharkhand</option>
+      		<option>Kerela</option>
+      		<option>Maharashtra</option>
+      		<option>Manipur</option>
+      		<option>Punjab</option>
+      		<option>Rajasthan</option>
+      		<option>Tamil Nadu</option>
+      		<option>Telangana</option>
+      		<option>Uttar Pradesh</option>
+      		<option>Uttrakhand</option>
+      		<option>West Bengal</option>
+     	</select>
+    </div> 
+    </div>
+   
+   <div></div>
+   
+   <div class="form-group" align="justify">
+      <label class="control-label col-sm-2" for="addr">Country: </label>
+      <div class="col-sm-10">   
+      	<select name="ccountry" class="form-control" id="addr">
+      		<option>Albania</option>
+      		<option>Algeria</option>
+      		<option>Andorra</option>
+      		<option>Angola</option>
+      		<option>Argentina</option>
+      		<option>Bangladesh</option>
+      		<option>Belgium</option>
+      		<option>Bhutan</option>
+      		<option>China</option>
+      		<option>Denmark</option>
+      		<option>Egypt</option>
+      		<option>Germany</option>
+      		<option>India</option>
+      		<option>Japan</option>
+      		<option>Luxembourg</option>
+      		<option>Malaysia</option>
+      		<option>Nepal</option>
+      		<option>Russia</option>
+      		<option>Singapore</option>
+      		<option>United Arab Emirates</option>
+      		<option>United States</option>
+     	</select>
+    </div> 
+    </div>
+    
+  <div></div>
+    
+    <div class="form-group" align="justify">
+      <label class="control-label col-sm-2" for="compname">Zipcode:</label>
+      <div class="col-sm-10">          
+       <input type="text" class="form-control" placeholder="Zipcode" name="czipcode"> 
+      </div>
+    </div>
+    
+    
     
     <div class="form-group" align="justify">
       <label class="control-label col-sm-2" for="phno">Phone No:</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="phno" placeholder="Enter password" name="phno">
+        <input type="text" class="form-control" id="phno" placeholder="Enter Phone Number" name="phno">
       </div>
     </div>
     
@@ -90,6 +193,7 @@ class="close" title="Close Modal">&times;</span>
         <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
       </div>
     </div>
+    
      <div class="form-group" align="justify">
       <label class="control-label col-sm-2" for="pwd">Password:</label>
       <div class="col-sm-10">          
@@ -100,13 +204,10 @@ class="close" title="Close Modal">&times;</span>
     <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">
         <button type="submit" class="btn btn-primary">Done</button>
+        <button type="button" onclick="document.getElementById('id03').style.display='none'" class="btn btn-primary">Cancel</button>
       </div>
     </div>
-  
-    </div>
 
-    <div class="container" style="background-color:#f1f1f1; margin-left: 0px; width: auto;">
-      <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
     </div>
   </form>
 </div>
