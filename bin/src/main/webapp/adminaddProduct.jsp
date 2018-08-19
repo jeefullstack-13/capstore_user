@@ -62,6 +62,7 @@
     </div>
     <div>
    <button type="button" class="btn btn-primary btn-md">Upload Image</button> 
+   <button type="button" class="btn btn-primary btn-md"  >Upload Related Images</button> 
     </div>
     <br>
     <br>
