@@ -1,6 +1,9 @@
 
 <body>
 
+	
+
+
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header"></div>
@@ -11,7 +14,7 @@
 						class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<ul class="list-inline">
-							<li><a href="admininventory1/{category1}" >Electronics</a></li>
+							<li><a href="admininventory1/electronics">Electronics</a></li>
 							<br>
 							<li><a href="admininventory2/{category2}">Clothing</a></li>
 							<br>
@@ -26,7 +29,7 @@
 						id="searchTerm1"> >
 					<div class="input-group-btn">
 						<!-- <button class="btn btn-default" type="submit"> -->
-						<a href="admininventory" id="searchMerch">
+						<a href="admininventory" id="searchMerch" target="cntFrame">
 							<button class="btn btn-default" type="button"
 								onclick="document.getElementById('searchMerch').href='admininventory/' + document.getElementById('searchTerm1').value;">
 								<i class="glyphicon glyphicon-search"></i>
@@ -58,7 +61,7 @@
 
 	<div class="container">
 
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" >
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
 				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -98,13 +101,13 @@
 	<br>
 	<br>
 
-	<div class="container">
+	<div class="container" >
 		<div class="row">
 			<div class="col-md-4">
 				<span class="border border-0">
 					<div class="thumbnail">
 
-						<a href="Page1_full "> <img
+						<a href="admininventory/{productName} "> <img
 							src=".\resources\images1\picture4.jpg" alt="mobile"
 							style="width: 50%; height: 27%"></a>
 						<div class="caption">
@@ -144,7 +147,7 @@
 	</div>
 	<br>
 	<br>
-	<div class="container">
+	<div class="container" >
 
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
@@ -185,7 +188,7 @@
 	</div>
 	<br>
 	<br>
-	<div class="container">
+	<div class="container" >
 		<div class="row">
 			<div class="col-md-6">
 				<div class="thumbnail">
