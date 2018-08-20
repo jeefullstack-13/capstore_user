@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-Welcome To Your Account
+<img src="./resources/images/welcome.jpg" class="img-circle" width="850px" height="400px" >
 </body>
 </html>
