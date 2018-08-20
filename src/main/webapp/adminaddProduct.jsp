@@ -1,3 +1,8 @@
+<%@page import="org.capstore.user.model.Brand"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,57 +25,61 @@
   <h2 align="center">ADD PRODUCTS</h2>
    <br>
   <br>
-  <form style="width: 50%">
-    
+  <form:form style="width: 50%" action="addps" modelAttribute="addprods" method="post">
+   <%--  
     <div class="form-group">
       <label for="pname">Product Name* : </label>
-      <input type="text" class="form-control" id="pname">
-    </div>
+      <form:input type="text" class="form-control" path="productName" id="pname" pattern="[A-Za-z]{3,}" 
+      title="Name should not contain any number or special character" required="required"/>
+    </div> --%>
    
-    <div class="form-group">
+   <%--  <div class="form-group">
       <label for="selbrand">Brand* : </label>
-      <select class="form-control" id="selbrand">
-        <option>---Select Brand----</option>
-      </select>
-    </div>
+      <form:input path="brand.brandName"/>
+       <form:select id="selbrand" path="brand.brandName" />
+    </div> --%>
     
-    <div class="form-group">
+   <%--  <div class="form-group">
       <label for="selcat">Category* : </label>
-     <select class="form-control" id="selcat">
-        <option>---Select Category----</option>
-      </select>
+  <form:select path="category" items="${categoryName}">
+      
+    </form:select>
+
+	
     </div>
     
     <div class="form-group">
       <label for="price">Price* : </label>
-      <input type="text" class="form-control" id="price">
-    </div>
+      <form:input type="text" class="form-control" path="price" />
+   </div>
     
     <div class="form-group">
       <label for="qty">Quantity* : </label>
-      <input type="text" class="form-control" id="qty">
+      <form:input type="text" class="form-control" path="quantity" id="qty" pattern="[0-9]+(\\.[0-9][0-9]?)?"
+      title="Quantity should not contain any text or special character" required="required"/>
     </div>
     
     <div class="form-group">
       <label for="desc">Description* : </label>
-      <textarea class="form-control" rows="5" id="desc"></textarea>
+      <form:textarea class="form-control" path="description" rows="5" id="desc"></form:textarea>
     </div>
     
     <div class="form-group">
       <label for="expd">Expiry Date* : </label>
-      <input type="date" class="form-control" id="expd">
+      <form:input type="date" path="expiryDate" class="form-control" id="expd" />
     </div>
     <div>
-   <button type="button" class="btn btn-primary btn-md">Upload Image</button> 
-   <button type="button" class="btn btn-primary btn-md"  >Upload Related Images</button> 
+   <form:button type="button" class="btn btn-primary btn-md">Upload Image</form:button> 
+     
     </div>
+    
     <br>
     <br>
     <div>
-     <button type="button" class="btn btn-primary btn-md">Add</button> 
-     <button type="button" class="btn btn-primary btn-md">Cancel</button> 
-    </div>
-  </form>
+     <form:button type="submit" class="btn btn-primary btn-md" value="Add"/>
+     <form:button type="submit" class="btn btn-primary btn-md" value="Cancel"/>
+    </div> --%>
+  </form:form>
 </div>
 
 </body>

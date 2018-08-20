@@ -11,7 +11,11 @@ public class Inventory {
 	private String productName;
 	private String description;
 	private Brand brand; 
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
 	private Merchant merchant;
 	private int noOfViews;
 	private Category Category;
@@ -39,26 +43,31 @@ public class Inventory {
 	public Inventory() {
 		
 	}
-	
+
 	public int getProductId() {
 		return productId;
 	}
+
 	public void setProductId(int productId) {
 		this.productId = productId;
 	}
+
 	public String getProductName() {
 		return productName;
 	}
+
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
+
 	public String getDescription() {
 		return description;
 	}
+
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
+
 	public Brand getBrand() {
 		return brand;
 	}
@@ -70,71 +79,102 @@ public class Inventory {
 	public Merchant getMerchant() {
 		return merchant;
 	}
+
 	public void setMerchant(Merchant merchant) {
 		this.merchant = merchant;
 	}
+
 	public int getNoOfViews() {
 		return noOfViews;
 	}
+
 	public void setNoOfViews(int noOfViews) {
 		this.noOfViews = noOfViews;
 	}
+<<<<<<< HEAD
 	
+=======
+
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+
+>>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
 	public Date getDateOfInclusion() {
 		return dateOfInclusion;
 	}
+
 	public void setDateOfInclusion(Date dateOfInclusion) {
 		this.dateOfInclusion = dateOfInclusion;
 	}
+
 	public double getPrice() {
 		return price;
 	}
+
 	public void setPrice(double price) {
 		this.price = price;
 	}
+
 	public List<ProductImages> getUploadimage() {
 		return uploadimage;
 	}
+
 	public void setUploadimage(List<ProductImages> uploadimage) {
 		this.uploadimage = uploadimage;
 	}
+
 	public int getQuantity() {
 		return quantity;
 	}
+
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
+
 	public Date getExpiryDate() {
 		return expiryDate;
 	}
+
 	public void setExpiryDate(Date expiryDate) {
 		this.expiryDate = expiryDate;
 	}
+
 	public ManagingCart getManagingCart() {
 		return managingCart;
 	}
+
 	public void setManagingCart(ManagingCart managingCart) {
 		this.managingCart = managingCart;
 	}
+
 	public Discount getDiscount() {
 		return discount;
 	}
+
 	public void setDiscount(Discount discount) {
 		this.discount = discount;
 	}
+
 	public Coupons getCoupon() {
 		return coupon;
 	}
+
 	public void setCoupon(Coupons coupon) {
 		this.coupon = coupon;
 	}
+
 	public List<FeedBack> getFeedback() {
 		return feedback;
 	}
+
 	public void setFeedback(List<FeedBack> feedback) {
 		this.feedback = feedback;
 	}
-	
 
 	public List<WishList> getWishList() {
 		return wishList;
@@ -185,13 +225,15 @@ public class Inventory {
 		this.wishList = wishList;
 		this.invoiceProduct = invoiceProduct;
 	}
-
-	
-	
 	
 
 	
 	
+<<<<<<< HEAD
+	
+
+	
+	
 
 	
 
@@ -199,6 +241,9 @@ public class Inventory {
 
 	
 	
+=======
+
+>>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
 
 	
 	

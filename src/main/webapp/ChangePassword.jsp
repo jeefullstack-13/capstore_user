@@ -19,13 +19,16 @@
 <div class="row">
 <div class="col-sm-6 col-sm-offset-3">
 <br/>
-<form method="post" id="passwordForm">
+<form method="post" id="passwordForm" action="changePwd">
 
-<br><input type="password" class="input-lg form-control" name="password1" id="password1" placeholder="Old Password" autocomplete="off"></br>
+<br>
+<input type="text" class="input-lg form-control" name="email" id="userEmail" placeholder="Confirm Email" autocomplete="off"></br>
 
-<input type="password" class="input-lg form-control" name="password2" id="password2" placeholder="New Password" autocomplete="off"><br>
+<input type="password" class="input-lg form-control" name="password" id="password1" placeholder="Old Password" autocomplete="off"></br>
 
-<input type="password" class="input-lg form-control" name="password3" id="password3" placeholder="Confirm Password" autocomplete="off"><br>
+<input type="password" class="input-lg form-control" name="newPassword" id="password2" placeholder="New Password" autocomplete="off"><br>
+
+<input type="password" class="input-lg form-control" name="confirmNewPassword" id="password3" placeholder="Confirm Password" autocomplete="off"><br>
 
 <input type="submit" name="submit" class="col-xs-12 btn btn-primary btn-load btn-lg" data-loading-text="Changing Password..." value="Change Password">
 </form>
