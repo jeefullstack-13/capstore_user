@@ -1,12 +1,10 @@
 package org.capstore.user.controller;
-<<<<<<< HEAD
+
 
 import javax.servlet.http.HttpSession;
 import org.capstore.user.model.Customer;
 import org.capstore.user.model.Order;
-=======
 
->>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -87,7 +85,7 @@ public class CustomerController {
 	}
 	
 	
-<<<<<<< HEAD
+
 	@RequestMapping("/update")
 	public String editProfile(ModelMap map) {
 		
@@ -111,8 +109,5 @@ public class CustomerController {
 	
 	
 	
-=======
 
-
->>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
 }
