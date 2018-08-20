@@ -34,8 +34,8 @@
        <h3>DASHBOARD</h3>
         <p>Statistics</p>
          <div>
-       <h4 align="right"> <a href="adminInbox.jsp" target="adFrame">  Inbox>>></a></h4>
-       <h4 align="right"> <a href="adminCompose.jsp" target="adFrame">  Compose E-mail>>></a></h4>
+       <h4 align="right"> <a href="inbox" target="adFrame">  Inbox>>></a></h4>
+       <h4 align="right"> <a href="compose" target="adFrame">  Compose E-mail>>></a></h4>
         <h4 align="right"> <a href="adminRevenue.jsp" target="adFrame">  Calculate Revenue>>></a></h4>
        </div>
       </div>

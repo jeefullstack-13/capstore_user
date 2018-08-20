@@ -83,11 +83,11 @@ public class MerchantController {
 		
 	}
 	
-	@RequestMapping("/inbox")
+	/*@RequestMapping("/inbox")
 	public String inbox() {
 		
 		return "inbox";
 		
-	}
+	}*/
 	
 }
