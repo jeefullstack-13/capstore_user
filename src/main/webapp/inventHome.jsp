@@ -23,9 +23,20 @@
     <div class="col-sm-3 sidenav">
       <h4>Inventory Management</h4>
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="adminaddProduct.jsp" target="invenFrame">Add Product</a></li>
+        <li class="active"><a href="adminAddProduct" target="invenFrame">Add Product</a></li>
         <li class="active"><a href="remProduct.jsp" target="invenFrame">Remove Product</a></li>
-      </ul><br>
+      </ul>
+     <h4>Brand Management</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="adminAddBrand" target="invenFrame">Add Brand</a></li>
+        <li class="active"><a href="editBrand.jsp" target="invenFrame">Edit Brand</a></li>
+      </ul>
+         <h4>Category Management</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="adminAddCategory" target="invenFrame">Add Category</a></li>
+        <li class="active"><a href="editCategory.jsp" target="invenFrame">Edit Category</a></li>
+      </ul>
+      <br>
       <div class="input-group">
         <input type="text" class="form-control" id="searchTerm" placeholder="Search for a product..">
         <span class="input-group-btn">

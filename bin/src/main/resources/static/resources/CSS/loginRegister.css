@@ -10,6 +10,14 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
     border-radius: 15px;
 }
+.select
+{
+	 padding: 12px 20px;
+	 margin: 8px 0;
+	 border: 1px solid #ccc;
+     box-sizing: border-box;
+     border-radius: 15px;
+}
 
 
 .radioContainer #admin

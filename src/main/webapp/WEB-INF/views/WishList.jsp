@@ -1,5 +1,8 @@
 
 
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <body>
 
 <nav class="navbar navbar-inverse">
@@ -54,13 +57,17 @@
                         <th></th>
                     </tr>
                 <tbody>
+                <c:forEach items="${inventoryList}" var="inventory">
                     <tr>
                         <td class="col-sm-8 col-md-6">
                         <div class="media">
                             <a class="thumbnail pull-left" href="#"> 
                             <img class="media-object" src="./resources/images1/IIT Five point.jpg" style="width: 72px; height: 72px;"> </a>
                             <div class="media-body">
-                                <h4 class="media-heading">Product name</h4>
+                               <div class="caption">
+               			   <h4 class="pull-right"> ${inventory.price}</h4>
+               			  	<h4>${inventory.productName}</h4>
+               		   </div>
                             <div class="product-rating">
                             	<i class="fa fa-star gold"></i> 
                             	<i class="fa fa-star gold"></i> 
@@ -74,7 +81,7 @@
                         </div></td>
                         <td class="col-sm-1 col-md-1" style="text-align: center">
                         </td>
-                        <td class="col-sm-1 col-md-1 text-center"><strong>$200</strong></td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>${inventory.price}</strong></td>
                         <td class="col-sm-1 col-md-1">
                         <td>
                         <a href="shippingAddressCap">
@@ -88,6 +95,7 @@
                             <span class="glyphicon glyphicon-remove"></span>Remove
                         </button></td>
                     </tr>
+                   </c:forEach>
                     <tr>
                         <td class="col-md-6">
                         <div class="media">

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href=".\resources\css\footer.css">
   <link rel="stylesheet" href=".\resources\css\header.css">
    <link rel="stylesheet" href=".\resources\css\product.css">
+<<<<<<< HEAD
   
   
  <!--  <link href="https://bootstrap/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
@@ -34,7 +35,25 @@
 <%@include file="product.jsp" %>	
 	</article>
 </section>
+=======
+   <link href="https://bootstrap-override.css" rel="stylesheet" id="bootstrap-css">
+ 
+  <script src=".\resources\jscripts\product.js"></script>		
+	
+  
+  
 
+ 
+<%@ include file="header.jsp" %>   
+</head>
+<body id="myPage" >
+<section>
+ 	 <article>
+<%@include file="product.jsp" %>	
+	</article>
+</section>
+
+>>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
 
 <%@  include file="footer.jsp" %>
 

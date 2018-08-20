@@ -1,4 +1,11 @@
+
+    
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+
 <nav class="navbar navbar-inverse">
+
   <div class="container-fluid">
     <div class="navbar-header">
      
@@ -8,7 +15,7 @@
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop By Category <span class="caret"></span></a>
         <ul class="dropdown-menu">
         
-          <li><a href="page1.jsp">Electronics</a></li>
+          <li><a href="admininventory1/{category1}">Electronics</a></li>
           <li><a href="#">Clothing</a></li>
           <li><a href="#">Books</a></li>
         </ul>
@@ -35,7 +42,10 @@
  
     </ul>
   </div>
-</nav><div class="container-fluid">
+</nav>
+
+
+<div class="container-fluid">
     <div class="content-wrapper">	
 		<div class="item-container">	
 			<div class="container">	
@@ -43,7 +53,7 @@
 					<div class="product col-md-3 service-image-left">
                     
 
-							<div id="target" class="primeimage">
+							<div class="primeimage">
 							<img id="item-display" src=".\resources\images1\prakashfinal.jpg" alt="" style="width:150px;height:290px;"></img>
 							</div>
 			
@@ -63,9 +73,23 @@
 							</a>
 						</center>
 					</div>
+					 <c:forEach items="${inventoryList}" var="inventory">
+					
+        <tr>
 							<div class="col-md-7 pull-right">
-					<div class="product-title">Apple iPhone 6 (Space Grey, 32GB)</div>
-					<div class="product-desc">The Corsair Gaming Series GS600 is the ideal price/performance choice for mid-spec gaming PC</div>
+					<div class="product-title">
+					 ${inventory.productId}
+					</div>
+					<div class="product name">
+					${inventory.productName}
+					</div>
+					<div class="product-desc">
+					  ${inventory.description}
+					
+					</div>
+					
+					
+					
 					<div class="product-rating">
 							<i class="fa fa-star gold"></i> 
 							<i class="fa fa-star gold"></i> 
@@ -83,7 +107,9 @@
 					</div>
 					<br>
 					<br>
-					<div class="product-price">$ 1234.00</div>
+					<div class="product-price"> ${inventory.price}
+								&nbsp;&nbsp;
+								$ Discount</div>
 					<div class="product-stock">In Stock</div>
 					<hr>
 					<div class="btn-group cart">
@@ -91,21 +117,35 @@
 							Add to cart 
 						</button>
 					</div>
-					<div class="btn-group cart">
+				 
+                      
+								<div class="btn-group cart">
+								<a href="#" >
+								<button type="button" class="btn btn-success">
+										Apply Discount</button>
+						</a>   &nbsp;&nbsp;
+						<div class="btn-group cart">
 				
-						<a href="shippingAddressCap" ><button type="button" class="btn btn-success">
+							<a href="shippingAddressCap" ><button type="button" class="btn btn-success">
 							Buy Now 
 						</button></a>
 					</div>
+					</div> 
+					</div>
+					 </c:forEach>
+					
+					
 					
 				</div>
 				</div>
 					
 			</div> 
 		</div>
-		<div class="container-fluid">		
+	
+    
+	<!-- div class="container-fluid">		
 			<div class="col-md-12 product-info">
-	<!-- 				<ul id="myTab" class="nav nav-tabs nav_tabs">
+					<ul id="myTab" class="nav nav-tabs nav_tabs">
 						
 						<li class="active"><a href="#service-one" data-toggle="tab">DESCRIPTION</a></li>
 						<li><a href="#service-two" data-toggle="tab">PRODUCT INFO</a></li>
@@ -114,7 +154,7 @@
 						
 						<li><a href="#service-four" data-toggle="tab">FEEDBACK</a></li>
 	
-					</ul> -->
+					</ul>
 					<h3>Description</h3>
 				<div id="myTabContent" class="tab-content">
 						<div class="tab-pane fade in active" id="service-one">
@@ -145,39 +185,42 @@
 										  
 						</div>									
 				</div>
-			</div>
+			</div> -->
 			
-						<div class="container">
-							<h3>Feedback/Rating</h3>
-							<div class="row" style="margin-top:40px;">
-								<div class="col-md-6">
-						    	<div class="well well-sm">
-						            <div class="text-right">
-						                <a class="btn btn-success btn-green" href="#reviews-anchor" id="open-review-box">Leave a Review</a>
-						            </div>
-						        
-						            <div class="row" id="post-review-box" style="display:none;">
-						                <div class="col-md-12">
-						                    <form accept-charset="UTF-8" action="" method="post">
-						                        <input id="ratings-hidden" name="rating" type="hidden"> 
-						                        <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
-						        
-						                        <div class="text-right">
-						                            <div class="stars starrr" data-rating="0"></div>
-						                            <a class="btn btn-danger btn-sm" href="#" id="close-review-box" style="display:none; margin-right: 10px;">
-						                            <span class="glyphicon glyphicon-remove"></span>Cancel</a>
-						                            <button class="btn btn-success btn-lg" type="submit">Save</button>
-						                        </div>
-						                    </form>
-						                </div>
-						            </div>
-						        </div> 
-						         
-								</div>
-							</div>
-						</div>
+							
+			
+<div>
+
+<h3>Customer Reviews</h3>
+<form:form action="saveComments" method="post" modelAttribute="feedback">
+<textarea name="comments" rows="3" cols="50" placeholder="Enter your message here">
+</textarea> 
+<br><br>
+  <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>	<input type="radio"  id="stars1" name="rati" value="1" hidden="true">
+  <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>	<input type="radio"  id="stars2" name="rati" value="2" hidden="true">
+  <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>	<input type="radio"  id="stars3" name="rati" value="3" hidden="true">
+  <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>	<input type="radio"  id="stars4" name="rati" value="4" hidden="true">
+  <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>	<input type="radio"  id="stars5" name="rati" value="5" hidden="true">
+	<br>
+  <input type="button" class="btn btn-info" value="Post The Review">
+ </form:form >
+</div>
+<div>
+<c:if test="${!empty feedback}">
+<table>
+		<tr>
+			<th><h3>Reviews:</h3></th>
+		</tr>
+		
+		<c:forEach items="${fd}" var="cmt">
+			<tr>
+			<td>${cmt.customer.customerName }</td></tr>
+			<tr>	<td>${cmt.comments}</td></tr>
+			<br><br>
+</c:forEach></table></c:if>	
+</div>
 						
-						
+		
 						<div>
 						<h3>Similar Products</h3>
 						<br>
@@ -189,7 +232,7 @@
 							            <div class="row">
 							                <div class="col-md-4">
 							                    <div class="card">
-							                        <img class="card-img-top" src="prakashfinal.jpg" alt="Card image cap">
+							                        <img class="card-img-top" src=".\resources\images1\prakashfinal.jpg" alt="Card image cap">
 							                        <div class="card-body">
 							                            <h5 class="card-title">
 							                                <a href="#" class="text-dark">IPHONE 2</a>
@@ -204,10 +247,10 @@
 							                            </div>
 							                        </div>
 							                    </div>
-							                </div><!--.col-->
+							                </div>.col
 							                <div class="col-md-4">
 							                    <div class="card">
-							                        <img class="card-img-top" src="prakashfinal.jpg" alt="Card image cap">
+							                        <img class="card-img-top" src=".\resources\images1\prakashfinal.jpg" alt="Card image cap">
 							                        <div class="card-body">
 							                            <h5 class="card-title">
 							                                <a href="#" class="text-dark"> 4000/-  MTC</a>
@@ -222,10 +265,10 @@
 							                            </div>
 							                        </div>
 							                    </div>
-							                </div><!--.col-->
+							                </div>.col
 							                <div class="col-md-4">
 							                    <div class="card">
-							                        <img class="card-img-top" src="prakashfinal.jpg" alt="Card image cap">
+							                        <img class="card-img-top" src=".\resources\images1\prakashfinal.jpg" alt="Card image cap">
 							                        <div class="card-body">
 							                            <h5 class="card-title">
 							                                <a href="#" class="text-dark"> 40000/-    MTC</a>
@@ -240,10 +283,10 @@
 							                            </div>
 							                        </div>
 							                    </div>
-							                </div><!--.col-->
-							            </div><!--.row-->
-							        </div><!--.container-->
-							    </div><!--.container-fluid-->
+							                </div><!-- .col -->
+							            </div><!-- .row -->
+							        </div><!-- .container -->
+							    </div><!-- .container-fluid -->
 							</section>
 						</div>
 			

@@ -1,3 +1,4 @@
+<%@taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+   
   <style>
     .row.content {height: auto;}
    
@@ -25,7 +28,7 @@
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="addMerch.jsp" target="merchFrame">Add Merchant</a></li>
         <li class="active"><a href="remMerch.jsp" target="merchFrame">Remove Merchant</a></li>
-        <li class="active"><a href="validMerch.jsp" target="merchFrame">Validate Merchant</a></li>
+        <li class="active"><a href="validateMerchants" target="merchFrame">Validate Merchant</a></li>
       </ul><br>
       <div class="input-group">
         <input type="text" class="form-control" id="searchTerm1" placeholder="Search for a Merchant..">
@@ -38,7 +41,7 @@
       </div>
     </div>
     <div class="col-sm-9 text -left">
-		<iframe name="merchFrame" width="970px" height="440px" style="border:none"></iframe>
+		<iframe name="merchFrame" width="1000px" height="440px" style="border:none"></iframe>
     </div>
   </div>
 </div>

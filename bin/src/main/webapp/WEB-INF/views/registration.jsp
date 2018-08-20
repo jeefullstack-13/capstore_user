@@ -40,17 +40,106 @@
     </div>  
       
     <div>
-      	<label for="maddress"><b>Address</b></label>
+      	<label for="mstreetno"><b>Street No.</b></label>
       	<br>
-      	<textarea placeholder="Enter Address" name="madd" style="border-radius: 15px;"></textarea>
+      	<textarea placeholder="Enter Street No" name="mstreetno" style="border-radius: 15px;"></textarea>
     </div>  
-     
+    
+    <div>
+      	<label for="mcity"><b>City</b></label>
+      	<br>
+      	<select name="mcity" class="select">
+      		<option>Mumbai</option>
+      		<option>Delhi</option>
+      		<option>Bangalore</option>
+      		<option>Hyderabad</option>
+      		<option>Ahmedabad</option>
+      		<option>Chennai</option>
+      		<option>Kolkata</option>
+      		<option>Surat</option>
+      		<option>Pune</option>
+      		<option>Jaipur</option>
+      		<option>Lucknow</option>
+      		<option>Kanpur</option>
+      		<option>Nagpur</option>
+      		<option>Visakhapatnam</option>
+      		<option>Indore</option>
+      		<option>Thane</option>
+      		<option>SriGanganagar</option>
+      		<option>Bhatinda</option>
+      		<option>Udaipur</option>
+      		<option>Jaipur</option>
+      		<option>Patiala</option>
+      	</select>
+    </div> 
+   
+   	<div>
+      	<label for="mstate"><b>State</b></label>
+      	<br>
+      	<select name="mstate" class="select">
+      		<option>Andhra Pradesh</option>
+      		<option>Bihar</option>
+      		<option>Chattisgarh</option>
+      		<option>Goa</option>
+      		<option>Gujarat</option>
+      		<option>Haryana</option>
+      		<option>Himachal Pradesh</option>
+      		<option>Jammu and Kashmir</option>
+      		<option>Jharkhand</option>
+      		<option>Kerela</option>
+      		<option>Maharashtra</option>
+      		<option>Manipur</option>
+      		<option>Punjab</option>
+      		<option>Rajasthan</option>
+      		<option>Tamil Nadu</option>
+      		<option>Telangana</option>
+      		<option>Uttar Pradesh</option>
+      		<option>Uttrakhand</option>
+      		<option>West Bengal</option>
+     	</select>
+    </div> 
+   	
+      	<div>
+      	<label for="mcountry"><b>Country</b></label>
+      	<br>
+      	<select name="mcountry" class="select">
+      		<option>Albania</option>
+      		<option>Algeria</option>
+      		<option>Andorra</option>
+      		<option>Angola</option>
+      		<option>Argentina</option>
+      		<option>Bangladesh</option>
+      		<option>Belgium</option>
+      		<option>Bhutan</option>
+      		<option>China</option>
+      		<option>Denmark</option>
+      		<option>Egypt</option>
+      		<option>Germany</option>
+      		<option>India</option>
+      		<option>Japan</option>
+      		<option>Luxembourg</option>
+      		<option>Malaysia</option>
+      		<option>Nepal</option>
+      		<option>Russia</option>
+      		<option>Singapore</option>
+      		<option>United Arab Emirates</option>
+      		<option>United States</option>
+     	</select>
+    </div> 
+  
+   	 <div>
+     	<label for="mzipcode"><b>Zipcode</b></label>
+      	<br>
+      	<input type="text" placeholder="Zipcode" name="mzipcode" required>
+    </div> 
+   
+  
     <div>
       	<label for="mpsw"><b>Password</b></label>
        	<br>
       	<input type="password" placeholder="Enter Password" name="mpsw" required>
     </div>  
-
+ 
     <div> 
        	<label for="mcpsw"><b> Confirm Password</b></label>
        	<br>
@@ -79,45 +168,135 @@
   	 
  <div class="container" id="regCustomer" style="display:none">
  	<div>
-     <label for="uname"><b>Customer Name</b></label>
+     <label for="cuname"><b>Customer Name</b></label>
       <br>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <input type="text" placeholder="Enter Username" name="cuname" required>
     </div>  
 	 
 	<div>
-	  <label for="email"><b>Email</b></label>
+	  <label for="cemail"><b>Email</b></label>
 	  <br>
-      <input type="text" placeholder="Enter Email" name="email" required>
+      <input type="text" placeholder="Enter Email" name="cemail" required>
     </div>  
       
     <div>
-      <label for="phoneno"><b>Phone Number</b></label>
+      <label for="cphoneno"><b>Phone Number</b></label>
       <br>
-      <input type="text" placeholder="Enter PhoneNo" name="phoneno" required>
+      <input type="text" placeholder="Enter PhoneNo" name="cphoneno" required>
     </div>  
       
     <div>
-      <label for="dob"><b>Date of Birth</b></label>
+      <label for="cdob"><b>Date of Birth</b></label>
       <br>
-      <input type="date" placeholder="Enter DOB" name="dob" style="border-radius: 15px;" required>
+      <input type="date" placeholder="Enter DOB" name="cdob" style="border-radius: 15px;" required>
     </div>  
       <br>
+   
     <div>
-      <label for="address"><b>Address</b></label>
-        <br>
-      <textarea placeholder="Enter Address" name="add" style="border-radius: 15px;" required></textarea>
+      	<label for="cstreetno"><b>Street No.</b></label>
+      	<br>
+      	<textarea placeholder="Enter Street No" name="cstreetno" style="border-radius: 15px;"></textarea>
     </div>  
-     
+   
     <div>
-      <label for="psw"><b>Password</b></label>
-       <br>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-    </div>  
-      <br>
-    <div> 
-       <label for="cpsw"><b> Confirm Password</b></label>
+      	<label for="ccity"><b>City</b></label>
+      	<br>
+      	<select name="ccity" class="select">
+      		<option>Mumbai</option>
+      		<option>Delhi</option>
+      		<option>Bangalore</option>
+      		<option>Hyderabad</option>
+      		<option>Ahmedabad</option>
+      		<option>Chennai</option>
+      		<option>Kolkata</option>
+      		<option>Surat</option>
+      		<option>Pune</option>
+      		<option>Jaipur</option>
+      		<option>Lucknow</option>
+      		<option>Kanpur</option>
+      		<option>Nagpur</option>
+      		<option>Visakhapatnam</option>
+      		<option>Indore</option>
+      		<option>Thane</option>
+      		<option>SriGanganagar</option>
+      		<option>Bhatinda</option>
+      		<option>Udaipur</option>
+      		<option>Jaipur</option>
+      		<option>Patiala</option>
+      	</select>
+    </div> 
+    
+   	<div>
+      	<label for="cstate"><b>State</b></label>
+      	<br>
+      	<select name="cstate" class="select">
+      		<option>Andhra Pradesh</option>
+      		<option>Bihar</option>
+      		<option>Chattisgarh</option>
+      		<option>Goa</option>
+      		<option>Gujarat</option>
+      		<option>Haryana</option>
+      		<option>Himachal Pradesh</option>
+      		<option>Jammu and Kashmir</option>
+      		<option>Jharkhand</option>
+      		<option>Kerela</option>
+      		<option>Maharashtra</option>
+      		<option>Manipur</option>
+      		<option>Punjab</option>
+      		<option>Rajasthan</option>
+      		<option>Tamil Nadu</option>
+      		<option>Telangana</option>
+      		<option>Uttar Pradesh</option>
+      		<option>Uttrakhand</option>
+      		<option>West Bengal</option>
+     	</select>
+    </div> 
+   
+      	<div>
+      	<label for="ccountry"><b>Country</b></label>
+      	<br>
+      	<select name="ccountry" class="select">
+      		<option>Albania</option>
+      		<option>Algeria</option>
+      		<option>Andorra</option>
+      		<option>Angola</option>
+      		<option>Argentina</option>
+      		<option>Bangladesh</option>
+      		<option>Belgium</option>
+      		<option>Bhutan</option>
+      		<option>China</option>
+      		<option>Denmark</option>
+      		<option>Egypt</option>
+      		<option>Germany</option>
+      		<option>India</option>
+      		<option>Japan</option>
+      		<option>Luxembourg</option>
+      		<option>Malaysia</option>
+      		<option>Nepal</option>
+      		<option>Russia</option>
+      		<option>Singapore</option>
+      		<option>United Arab Emirates</option>
+      		<option>United States</option>
+     	</select>
+    </div> 
+ 
+   	 <div>
+     	<label for="czipcode"><b>Zipcode</b></label>
+      	<br>
+      	<input type="text" placeholder="Zipcode" name="czipcode" required>
+    </div> 
+   
+   
+    <div>
+      <label for="cpsw"><b>Password</b></label>
        <br>
       <input type="password" placeholder="Enter Password" name="cpsw" required>
+    </div>  
+
+    <div> 
+       <label for="ccpsw"><b> Confirm Password</b></label>
+       <br>
+      <input type="password" placeholder="Enter Password" name="ccpsw" required>
     </div>  
     
     <div>

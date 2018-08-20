@@ -27,6 +27,7 @@
                     <td>${inventory.productName}</td>
                     <td>${inventory.price}</td>
                    <td>${inventory.category}</td>
+                    <td>${inventory.description}</td>
                   
                 </tr>
             </c:forEach>

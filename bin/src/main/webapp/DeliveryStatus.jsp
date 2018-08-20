@@ -19,6 +19,8 @@
   	
   <div class="text-center">
   <form name="statusDeliveryForm" action="" method="post">
+    <br>
+    <br>
   	<label class="control-label">Order Id:</label>
   	<input type="text" name="idvalue" class="input-sm">
   	<input class="btn btn-info" type="submit" value="Submit">
