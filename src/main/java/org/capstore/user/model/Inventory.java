@@ -14,7 +14,7 @@ public class Inventory {
 	
 	private Merchant merchant;
 	private int noOfViews;
-	private String Category;
+	private Category Category;
 	private Date dateOfInclusion;
 	private double price;
 	
@@ -79,12 +79,7 @@ public class Inventory {
 	public void setNoOfViews(int noOfViews) {
 		this.noOfViews = noOfViews;
 	}
-	public String getCategory() {
-		return Category;
-	}
-	public void setCategory(String category) {
-		Category = category;
-	}
+	
 	public Date getDateOfInclusion() {
 		return dateOfInclusion;
 	}
@@ -157,10 +152,19 @@ public class Inventory {
 		this.invoiceProduct = invoiceProduct;
 	}
 
+	public Category getCategory() {
+		return Category;
+	}
+
+	public void setCategory(Category category) {
+		Category = category;
+	}
+
 	public Inventory(int productId, String productName, String description, Brand brand, Merchant merchant,
-			int noOfViews, String category, Date dateOfInclusion, double price, List<ProductImages> uploadimage,
-			int quantity, Date expiryDate, ManagingCart managingCart, Discount discount, Coupons coupon,
-			List<FeedBack> feedback, List<WishList> wishList, InvoiceProduct invoiceProduct) {
+			int noOfViews, org.capstore.user.model.Category category, Date dateOfInclusion, double price,
+			List<ProductImages> uploadimage, int quantity, Date expiryDate, ManagingCart managingCart,
+			Discount discount, Coupons coupon, List<FeedBack> feedback, List<WishList> wishList,
+			InvoiceProduct invoiceProduct) {
 		super();
 		this.productId = productId;
 		this.productName = productName;
