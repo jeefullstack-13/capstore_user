@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>profile</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,24 +12,24 @@
 
 <div class="container">
   <h2>Edit Profile</h2>
-  <form class="form-horizontal" action="">
+  <form class="form-horizontal" action="customerProfile.jsp" target="cntFrame">
     <div class="form-group" align="justify">
       <label class="control-label col-sm-2" for="email">Name:</label>
       <div class="col-sm-10">
-        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        <input type="text" class="form-control" id="email" placeholder="Enter name" name="email" >
       </div>
     </div>
     <div class="form-group" align="justify">
       <label class="control-label col-sm-2" for="pwd">Mobile:</label>
       <div class="col-sm-10">          
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+        <input type="password" class="form-control" id="pwd" placeholder="Enter mobile" name="pwd">
       </div>
     </div>
     
      <div class="form-group" align="justify">
       <label class="control-label col-sm-2" for="pwd">E-mail:</label>
       <div class="col-sm-10">          
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+        <input type="text" class="form-control" id="pwd" placeholder="Enter e-Mail" name="pwd">
       </div>
     </div>
      <div class="form-group" align="justify">

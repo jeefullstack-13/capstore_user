@@ -25,13 +25,25 @@
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="adminaddProduct.jsp" target="invenFrame">Add Product</a></li>
         <li class="active"><a href="remProduct.jsp" target="invenFrame">Remove Product</a></li>
-      </ul><br>
+      </ul>
+     <h4>Brand Management</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="adminaddBrand.jsp" target="invenFrame">Add Brand</a></li>
+        <li class="active"><a href="editBrand.jsp" target="invenFrame">Edit Brand</a></li>
+      </ul>
+         <h4>Category Management</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="adminaddCategory.jsp" target="invenFrame">Add Category</a></li>
+        <li class="active"><a href="editCategory.jsp" target="invenFrame">Edit Category</a></li>
+      </ul>
+      <br>
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search for a product..">
+        <input type="text" class="form-control" id="searchTerm" placeholder="Search for a product..">
         <span class="input-group-btn">
-          <button class="btn btn-default" type="button">
+          <!-- <button class="btn btn-default" type="button"> -->
+           <a href="admininventory" id="searchInv"> <button class="btn btn-default" type="button" onclick="document.getElementById('searchInv').href='admininventory/' + document.getElementById('searchTerm').value;" > 
             <span class="glyphicon glyphicon-search"></span>
-          </button>
+          </button></a>
         </span>
       </div>
     </div>

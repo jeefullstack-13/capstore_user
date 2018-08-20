@@ -84,6 +84,7 @@
                           <h3>Inbox</h3>
                           
                       </div>
+<<<<<<< HEAD
                       <table class="table table-inbox table-hover" >
                             <tbody>
                             <tr>
@@ -94,6 +95,10 @@
                            
                             <th>Sent Date</th>
                             </tr>
+=======
+                      <table class="table table-inbox table-hover">
+                            <tbody>
+>>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
                             <c:forEach items="${email}" var="emails">
                               <tr class="unread">
                                   

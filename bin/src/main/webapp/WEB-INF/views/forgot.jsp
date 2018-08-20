@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -27,13 +28,13 @@
                   <h2 class="text-center">Forgot Password?</h2>
                   <p>You can reset your password after Verification</p>
                   <div class="panel-body">
-    
-                    <form id="register-form" role="form" autocomplete="off" class="form" method="post">
+    				<fieldset>
+                    <form:form id="register-form" role="form" autocomplete="off" class="form" method="post" action="verify" modelAttribute="customer">
     
                       <div class="form-group">
                         <div class="input-group">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
-                          <input id="email" name="email" placeholder="email address" class="form-control"  type="email">
+                          <form:input id="email" path="emailId" placeholder="email address" class="form-control"  type="email"/>
                         </div>
                       </div>
                       <div class="form-group">
@@ -41,8 +42,8 @@
                       </div>
                       
                       <input type="hidden" class="hide" name="token" id="token" value=""> 
-                    </form>
-    
+                    </form:form>
+    				</fieldset>
                   </div>
                 </div>
               </div>

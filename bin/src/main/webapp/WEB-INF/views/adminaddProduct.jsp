@@ -65,6 +65,7 @@
     </div>
     <div>
    <button type="button" class="btn btn-primary btn-md"  >Upload Image</button> 
+    
     </div>
     <br>
     <br>

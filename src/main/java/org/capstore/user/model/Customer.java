@@ -4,41 +4,50 @@ import java.util.Date;
 import java.util.List;
 
 
-
 public class Customer {
 
 	
 	private int customerId;
 	private String customerName;
 	private String phoneNumber;
+	
 	private String emailId;
 	private Date dateOfBirth;
 	private String password;
+	
 	private List<Address> address;
 	private Date lastLogin;
-	private String isActive;
-	private Shipping shipping;
-
+	private boolean isActive;
+	
+	private List<Shipping> shipping;
+	
 	private List<BankAccount> bank;
+	
 	private List<ManagingCart> managingCart;
+	
 	private List<Order> order;
+	
 	
 	private List<FeedBack> feedBack;
 	
+	
 	private List<ReturnOrders> returnOrders; 
 
+	
 	private List<WishList> wishList;
 	
+	
+	private GenerateInvoice generateInvoice;
 	public Customer() {
 		
 	}
 
 	
 
-	public Customer(int customerId, String customerName, String phoneNumber, String emailId, Date dateOfBirth,
-			String password, List<Address> address, Date lastLogin, String isActive, Shipping shipping,
+public Customer(int customerId, String customerName, String phoneNumber, String emailId, Date dateOfBirth,
+			String password, List<Address> address, Date lastLogin, boolean isActive, List<Shipping> shipping,
 			List<BankAccount> bank, List<ManagingCart> managingCart, List<Order> order, List<FeedBack> feedBack,
-			List<ReturnOrders> returnOrders, List<WishList> wishList) {
+			List<ReturnOrders> returnOrders, List<WishList> wishList, GenerateInvoice generateInvoice) {
 		super();
 		this.customerId = customerId;
 		this.customerName = customerName;
@@ -56,11 +65,22 @@ public class Customer {
 		this.feedBack = feedBack;
 		this.returnOrders = returnOrders;
 		this.wishList = wishList;
+		this.generateInvoice = generateInvoice;
 	}
 
 
 
-	public List<ReturnOrders> getReturnOrders() {
+public GenerateInvoice getGenerateInvoice() {
+		return generateInvoice;
+	}
+
+
+public void setGenerateInvoice(GenerateInvoice generateInvoice) {
+		this.generateInvoice = generateInvoice;
+	}
+
+
+public List<ReturnOrders> getReturnOrders() {
 		return returnOrders;
 	}
 
@@ -136,19 +156,25 @@ public class Customer {
 		this.lastLogin = lastLogin;
 	}
 
-	public String getIsActive() {
+	
+
+	public boolean isActive() {
 		return isActive;
 	}
 
-	public void setIsActive(String isActive) {
+
+
+	public void setActive(boolean isActive) {
 		this.isActive = isActive;
 	}
 
-	public Shipping getShipping() {
+
+
+	public List<Shipping> getShipping() {
 		return shipping;
 	}
 
-	public void setShipping(Shipping shipping) {
+	public void setShipping(List<Shipping> shipping) {
 		this.shipping = shipping;
 	}
 

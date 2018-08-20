@@ -10,7 +10,7 @@ public class Admin {
 	private String email;
 	private String password;
 	private Date lastLogin;
-	public int getAdminId() {
+		public int getAdminId() {
 		return adminId;
 	}
 	public void setAdminId(int adminId) {
@@ -34,11 +34,6 @@ public class Admin {
 	public void setLastLogin(Date lastLogin) {
 		this.lastLogin = lastLogin;
 	}
-	@Override
-	public String toString() {
-		return "Admin [adminId=" + adminId + ", email=" + email + ", password=" + password + ", lastLogin=" + lastLogin
-				+ "]";
-	}
 	public Admin(int adminId, String email, String password, Date lastLogin) {
 		super();
 		this.adminId = adminId;
@@ -47,7 +42,7 @@ public class Admin {
 		this.lastLogin = lastLogin;
 	}
 	public Admin() {
-		
+		super();
 	}
 
 

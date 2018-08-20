@@ -87,7 +87,7 @@
 	</div>
     <div class="container" style="background-color:#f1f1f1; width: auto;" >
       	<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      	<span class="psw" style="margin-left: 45%;">Forgot <a href="forgot">password?</a></span>   
+      	<span class="psw" style="margin-left: 45%;">Forgot <a href="forgot_full">password?</a></span>   
     </div>
   </form>
 </div>

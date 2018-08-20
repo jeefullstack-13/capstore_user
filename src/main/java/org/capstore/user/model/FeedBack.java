@@ -1,28 +1,20 @@
 package org.capstore.user.model;
 
 
-
 public class FeedBack {
+	
 	private int feedBackId;
-private Customer customer;
-	
+	private Customer customer;
 private Inventory inventory;
-	
-	private Merchant merchant;
+private Merchant merchant;
 private int ProductRating;
 private String comments;
 private String status;
-
-
-
 
 public FeedBack()
 {
 	
 }
-
-
-
 
 public FeedBack(int feedBackId, Customer customer, Inventory inventory, Merchant merchant, int productRating,
 		String comments, String status) {
