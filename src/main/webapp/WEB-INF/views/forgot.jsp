@@ -1,22 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<style>
-.form-gap {
-    padding-top: 70px;
-}
-</style>
-</head>
-<body>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <div class="form-gap"></div>
 <div class="container">
 	<div class="row">
@@ -40,8 +25,9 @@
                       <div class="form-group">
                         <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Verify" type="submit">
                       </div>
-                      
-                      <input type="hidden" class="hide" name="token" id="token" value=""> 
+                      <c:if test="${!empty error}">
+                      <input type="hidden" class="hide" name="token" id="token" style="color:red;" value="${error}"> 
+                      </c:if>
                     </form:form>
     				</fieldset>
                   </div>
@@ -51,5 +37,3 @@
           </div>
 	</div>
 </div>
-</body>
-</html>

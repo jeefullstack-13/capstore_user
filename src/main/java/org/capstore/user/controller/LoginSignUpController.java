@@ -38,12 +38,18 @@ public class LoginSignUpController {
 		return "byee";
 	}
 	
+	@RequestMapping("/forgot_full")
+	public String forgotfull(@Valid @ModelAttribute("customer") Customer email)
+	{
+		return "forgot_full";
+	}
+	
+	
 	@RequestMapping("/forgot")
-	public String forgot(@Valid @ModelAttribute("customer") Customer email)
+	public String forgot()
 	{
 		return "forgot";
 	}
-	
 	@RequestMapping("/contactUs")
 	public String contactUs()
 	{
