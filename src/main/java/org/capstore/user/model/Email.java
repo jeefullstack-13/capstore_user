@@ -2,6 +2,8 @@ package org.capstore.user.model;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 
 public class Email {
 	private int eID;
@@ -9,6 +11,7 @@ public class Email {
 	private String to_emailId;
 	private String body;
 	private String subject;
+	@JsonFormat(pattern="dd-MMM-yyyy")
 	private Date date;
 	public Email() {
 		
