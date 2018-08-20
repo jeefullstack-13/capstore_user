@@ -14,7 +14,7 @@
 						class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<ul class="list-inline">
-							<li><a href="admininventory1/electronics">Electronics</a></li>
+							<li><a href="admininventory1/{category1}">Electronics</a></li>
 							<br>
 							<li><a href="admininventory2/{category2}">Clothing</a></li>
 							<br>

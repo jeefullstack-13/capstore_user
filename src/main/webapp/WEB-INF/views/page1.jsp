@@ -70,29 +70,31 @@
     <div class="row">
         <div class="col-md-4">
        
-              <div class="thumbnail">
+              <!-- <div class="thumbnail"> -->
                <c:forEach items="${inventoryList}" var="inventory">
-               <div>
-              <h6>Image div</h6>
-               <a href="Product_full"> <img src="..\resources\images1\picture4.jpg" alt="phone image" class="img-responsive"> </a>
-                   </div>
+               
              
                    
                    <div class="product-title">
-					 ${inventory.productId}
+					 
 					</div>
                		 <div class="caption">
-               			   <h4 class="pull-right"> ${inventory.price}</h4>
+               			   <h4 class="pull-right"> Rs ${inventory.price}</h4>
                			  	<h4>${inventory.productName}</h4>
                		   </div>
-            			<div class="product-desc">
+            			
+						<div>
+              
+               <a href="Product_full"> <img src="..\resources\images1\picture4.jpg" alt="phone image" class="img-responsive"> </a>
+                   </div>
+                   <div class="product-desc">
 					 		 ${inventory.description}
 					
 						</div>
 					</c:forEach>
                 </div>
                 
-                </div>
+                <!-- </div> -->
                 
              
               

@@ -44,22 +44,8 @@ public class CapstoreController {
 			return "Product_full";
 		}*/
 	
-	  @RequestMapping("/admininventory1/electronics")
-			public String getInventoryForm1( ModelMap map) {
-			
-				
-				final String uri="http://localhost:8081/capstoreApp/api/v1/admininventory1/electronics";
-				RestTemplate restTemplate=new RestTemplate();
-				Map<String,Object> params=new HashMap<>();
-				params.put("category1", "electronics");
-				Inventory[] inventoryList= restTemplate.getForObject(uri, Inventory[].class,params);
-				
-				
-				map.put("inventoryList",inventoryList);
-				map.put("Inventory", new Inventory());
-				
-				return "Page1_full";
-			}
+	  /*@RequestMapping("/admininventory1/electronics")*/
+	
 	
 	@RequestMapping("/Page1_full")
 	public String page1(ModelMap map) {
