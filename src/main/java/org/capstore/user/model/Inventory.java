@@ -1,38 +1,33 @@
-package org.capstore.user.model;
+package org.capstore.rest.model;
 
 import java.util.Date;
 import java.util.List;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+
 
 public class Inventory {
-	
+
 	private int productId;
 	private String productName;
 	private String description;
-	private Brand brand; 
-	
+	private Brand brand;
 	private Merchant merchant;
 	private int noOfViews;
-	private String Category;
+	private Category category;
 	private Date dateOfInclusion;
 	private double price;
-	
 	private List<ProductImages> uploadimage;
 	private int quantity;
 	private Date expiryDate;
-	
 	private ManagingCart managingCart;
-	
 	private Discount discount;
-	
 	private Coupons coupon;
-	
 	private List<FeedBack> feedback;
 	
-	
 	private List<WishList> wishList;
-	
 	
 	private InvoiceProduct invoiceProduct;
 	
@@ -79,12 +74,19 @@ public class Inventory {
 	public void setNoOfViews(int noOfViews) {
 		this.noOfViews = noOfViews;
 	}
-	public String getCategory() {
-		return Category;
+	
+	
+
+	
+
+	public Category getCategory() {
+		return category;
 	}
-	public void setCategory(String category) {
-		Category = category;
+
+	public void setCategory(Category category) {
+		this.category = category;
 	}
+
 	public Date getDateOfInclusion() {
 		return dateOfInclusion;
 	}
@@ -158,7 +160,7 @@ public class Inventory {
 	}
 
 	public Inventory(int productId, String productName, String description, Brand brand, Merchant merchant,
-			int noOfViews, String category, Date dateOfInclusion, double price, List<ProductImages> uploadimage,
+			int noOfViews, Category category, Date dateOfInclusion, double price, List<ProductImages> uploadimage,
 			int quantity, Date expiryDate, ManagingCart managingCart, Discount discount, Coupons coupon,
 			List<FeedBack> feedback, List<WishList> wishList, InvoiceProduct invoiceProduct) {
 		super();
@@ -168,7 +170,7 @@ public class Inventory {
 		this.brand = brand;
 		this.merchant = merchant;
 		this.noOfViews = noOfViews;
-		Category = category;
+		this.category = category;
 		this.dateOfInclusion = dateOfInclusion;
 		this.price = price;
 		this.uploadimage = uploadimage;
@@ -184,18 +186,4 @@ public class Inventory {
 
 	
 	
-	
-
-	
-	
-
-	
-
-	
-
-	
-	
-
-	
-	
-}
+	}
