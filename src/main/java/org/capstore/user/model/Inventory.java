@@ -1,4 +1,4 @@
-package org.capstore.rest.model;
+package org.capstore.user.model;
 
 import java.util.Date;
 import java.util.List;
