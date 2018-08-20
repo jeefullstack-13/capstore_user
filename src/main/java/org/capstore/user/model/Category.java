@@ -1,7 +1,6 @@
 package org.capstore.user.model;
 
 import java.util.List;
-
 public class Category {
 private int categoryId;
 private String categoryName;

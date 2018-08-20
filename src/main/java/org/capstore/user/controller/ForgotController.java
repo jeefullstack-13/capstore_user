@@ -55,7 +55,7 @@ public class ForgotController {
 	@RequestMapping("/encryptLink")
 	public String change()
 	{
-		return "ChangePassword";
+		return "ChangePasswordfull";
 	}
 	
 }

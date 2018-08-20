@@ -11,7 +11,7 @@ public class Inventory {
 	private String productName;
 	private String description;
 	private Brand brand; 
-	
+
 	private Merchant merchant;
 	private int noOfViews;
 	private Category Category;
