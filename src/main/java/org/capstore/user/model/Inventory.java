@@ -14,7 +14,7 @@ public class Inventory {
 	
 	private Merchant merchant;
 	private int noOfViews;
-	private String category;
+	private Category category;
 	private Date dateOfInclusion;
 	private double price;
 	
@@ -88,11 +88,11 @@ public class Inventory {
 		this.noOfViews = noOfViews;
 	}
 
-	public String getCategory() {
+	public Category getCategory() {
 		return category;
 	}
 
-	public void setCategory(String category) {
+	public void setCategory(Category category) {
 		this.category = category;
 	}
 
@@ -185,7 +185,7 @@ public class Inventory {
 	}
 
 	public Inventory(int productId, String productName, String description, Brand brand, Merchant merchant,
-			int noOfViews, String category, Date dateOfInclusion, double price, List<ProductImages> uploadimage,
+			int noOfViews, Category category, Date dateOfInclusion, double price, List<ProductImages> uploadimage,
 			int quantity, Date expiryDate, ManagingCart managingCart, Discount discount, Coupons coupon,
 			List<FeedBack> feedback, List<WishList> wishList, InvoiceProduct invoiceProduct) {
 		super();

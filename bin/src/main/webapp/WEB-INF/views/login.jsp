@@ -13,6 +13,21 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
+<<<<<<< HEAD
+ 
+  <script>
+	// Get the modal
+	var modal = document.getElementById('id01'); 
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+   	 if (event.target == modal) {
+   	     modal.style.display = "none";
+   	 }
+	}
+  </script>
+=======
+>>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
 <%@ include file="header.jsp" %>   
 </head>
 <body id="myPage" background=".\resources\images\background_frontpage.jpg">

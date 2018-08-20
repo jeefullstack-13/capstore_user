@@ -2,13 +2,15 @@ package org.capstore.user.model;
 
 import java.util.Date;
 
+
+
 public class Admin {
-	
+
 	private int adminId;
 	private String email;
 	private String password;
 	private Date lastLogin;
-	public int getAdminId() {
+		public int getAdminId() {
 		return adminId;
 	}
 	public void setAdminId(int adminId) {

@@ -19,7 +19,7 @@ public class Customer {
 	private Date lastLogin;
 	private boolean isActive;
 	
-	private Shipping shipping;
+	private List<Shipping> shipping;
 	
 	private List<BankAccount> bank;
 	
@@ -45,7 +45,7 @@ public class Customer {
 	
 
 public Customer(int customerId, String customerName, String phoneNumber, String emailId, Date dateOfBirth,
-			String password, List<Address> address, Date lastLogin, boolean isActive, Shipping shipping,
+			String password, List<Address> address, Date lastLogin, boolean isActive, List<Shipping> shipping,
 			List<BankAccount> bank, List<ManagingCart> managingCart, List<Order> order, List<FeedBack> feedBack,
 			List<ReturnOrders> returnOrders, List<WishList> wishList, GenerateInvoice generateInvoice) {
 		super();
@@ -170,11 +170,11 @@ public List<ReturnOrders> getReturnOrders() {
 
 
 
-	public Shipping getShipping() {
+	public List<Shipping> getShipping() {
 		return shipping;
 	}
 
-	public void setShipping(Shipping shipping) {
+	public void setShipping(List<Shipping> shipping) {
 		this.shipping = shipping;
 	}
 

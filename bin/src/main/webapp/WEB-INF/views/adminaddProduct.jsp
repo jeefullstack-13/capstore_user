@@ -65,7 +65,10 @@
     </div>
     <div>
    <button type="button" class="btn btn-primary btn-md"  >Upload Image</button> 
+<<<<<<< HEAD
+=======
     
+>>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
     </div>
     <br>
     <br>

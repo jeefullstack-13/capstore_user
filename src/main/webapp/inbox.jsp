@@ -84,8 +84,21 @@
                           <h3>Inbox</h3>
                           
                       </div>
+
+                      <table class="table table-inbox table-hover" >
+                            <tbody>
+                            <tr>
+                            <th></th>
+                            <th>Subject</th>
+                            <th>Body</th>
+                            <th>Attachment</th>
+                           
+                            <th>Sent Date</th>
+                            </tr>
+
                       <table class="table table-inbox table-hover">
                             <tbody>
+
                             <c:forEach items="${email}" var="emails">
                               <tr class="unread">
                                   
