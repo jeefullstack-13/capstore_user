@@ -11,11 +11,7 @@ public class Inventory {
 	private String productName;
 	private String description;
 	private Brand brand; 
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
 	private Merchant merchant;
 	private int noOfViews;
 	private Category Category;
@@ -91,19 +87,15 @@ public class Inventory {
 	public void setNoOfViews(int noOfViews) {
 		this.noOfViews = noOfViews;
 	}
-<<<<<<< HEAD
-	
-=======
 
 	public Category getCategory() {
-		return category;
+		return Category;
 	}
 
 	public void setCategory(Category category) {
-		this.category = category;
+		Category = category;
 	}
 
->>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
 	public Date getDateOfInclusion() {
 		return dateOfInclusion;
 	}
@@ -192,14 +184,6 @@ public class Inventory {
 		this.invoiceProduct = invoiceProduct;
 	}
 
-	public Category getCategory() {
-		return Category;
-	}
-
-	public void setCategory(Category category) {
-		Category = category;
-	}
-
 	public Inventory(int productId, String productName, String description, Brand brand, Merchant merchant,
 			int noOfViews, org.capstore.user.model.Category category, Date dateOfInclusion, double price,
 			List<ProductImages> uploadimage, int quantity, Date expiryDate, ManagingCart managingCart,
@@ -225,25 +209,20 @@ public class Inventory {
 		this.wishList = wishList;
 		this.invoiceProduct = invoiceProduct;
 	}
-	
 
 	
 	
-<<<<<<< HEAD
 	
 
 	
-	
-
 	
 
 	
 
 	
-	
-=======
 
->>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
+	
+	
 
 	
 	

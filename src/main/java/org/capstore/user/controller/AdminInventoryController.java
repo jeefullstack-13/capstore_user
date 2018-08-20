@@ -6,16 +6,16 @@ import java.util.HashMap;
 
 import java.util.Map;
 
-<<<<<<< HEAD
+
 import org.capstore.user.model.Inventory;
 import org.capstore.user.model.WishList;
-=======
+
 import javax.validation.Valid;
 
 import org.capstore.user.model.Brand;
 import org.capstore.user.model.Category;
 import org.capstore.user.model.Inventory;
->>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
