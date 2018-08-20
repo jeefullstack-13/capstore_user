@@ -1,0 +1,2 @@
+document.getElementById('searchCust').href="admincustomer/" + document.getElementById('searchTerm').value;
+document.getElementById('searchMerch').href="adminmerchant/" + document.getElementById('searchTerm1').value;

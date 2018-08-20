@@ -1,16 +1,17 @@
 package org.capstore.user.model;
 
-import java.util.List;
 
 
-
+ 
 public class ManagingCart {
-
 private int cartId;
+	
 private Customer customer;
+	
 private Inventory inventory;
 private int quantity;
 private String status;
+
 private Order order;
 
 public ManagingCart(int cartId, Customer customer, Inventory inventory, int quantity, String status, Order order) {

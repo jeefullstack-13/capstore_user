@@ -105,13 +105,17 @@
 		</div>
 		<div class="container-fluid">		
 			<div class="col-md-12 product-info">
-					<ul id="myTab" class="nav nav-tabs nav_tabs">
+	<!-- 				<ul id="myTab" class="nav nav-tabs nav_tabs">
 						
 						<li class="active"><a href="#service-one" data-toggle="tab">DESCRIPTION</a></li>
 						<li><a href="#service-two" data-toggle="tab">PRODUCT INFO</a></li>
 						<li><a href="#service-three" data-toggle="tab">REVIEWS</a></li>
 						
-					</ul>
+						
+						<li><a href="#service-four" data-toggle="tab">FEEDBACK</a></li>
+	
+					</ul> -->
+					<h3>Description</h3>
 				<div id="myTabContent" class="tab-content">
 						<div class="tab-pane fade in active" id="service-one">
 						 
@@ -139,21 +143,110 @@
 								</ul>
 							</section>
 										  
-						</div>
-					<div class="tab-pane fade" id="service-two">
-						
-						<section class="container">
-								
-						</section>
-						
-					</div>
-					<div class="tab-pane fade" id="service-three">
-												
-					</div>
+						</div>									
 				</div>
-				<hr>
 			</div>
-		</div>
-		<h3 >Similar Products</h3>
-	</div>
+			
+						<div class="container">
+							<h3>Feedback/Rating</h3>
+							<div class="row" style="margin-top:40px;">
+								<div class="col-md-6">
+						    	<div class="well well-sm">
+						            <div class="text-right">
+						                <a class="btn btn-success btn-green" href="#reviews-anchor" id="open-review-box">Leave a Review</a>
+						            </div>
+						        
+						            <div class="row" id="post-review-box" style="display:none;">
+						                <div class="col-md-12">
+						                    <form accept-charset="UTF-8" action="" method="post">
+						                        <input id="ratings-hidden" name="rating" type="hidden"> 
+						                        <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
+						        
+						                        <div class="text-right">
+						                            <div class="stars starrr" data-rating="0"></div>
+						                            <a class="btn btn-danger btn-sm" href="#" id="close-review-box" style="display:none; margin-right: 10px;">
+						                            <span class="glyphicon glyphicon-remove"></span>Cancel</a>
+						                            <button class="btn btn-success btn-lg" type="submit">Save</button>
+						                        </div>
+						                    </form>
+						                </div>
+						            </div>
+						        </div> 
+						         
+								</div>
+							</div>
+						</div>
+						
+						
+						<div>
+						<h3>Similar Products</h3>
+						<br>
+						<br>
+						
+							<section class="sections random-product">
+							    <div class="container-fluid">
+							        <div class="container">
+							            <div class="row">
+							                <div class="col-md-4">
+							                    <div class="card">
+							                        <img class="card-img-top" src="prakashfinal.jpg" alt="Card image cap">
+							                        <div class="card-body">
+							                            <h5 class="card-title">
+							                                <a href="#" class="text-dark">IPHONE 2</a>
+							                            </h5>
+							                        </div>
+							                        <div class="card-footer">
+							                            <div class="badge badge-danger float-right">30%</div>
+							                            <div class="float-left">
+							                                <a href="#" class="text-danger">IPHONE 3</a>
+							                                <br>
+							                                <small class="text-muted"><del>2000 /-</del></small>
+							                            </div>
+							                        </div>
+							                    </div>
+							                </div><!--.col-->
+							                <div class="col-md-4">
+							                    <div class="card">
+							                        <img class="card-img-top" src="prakashfinal.jpg" alt="Card image cap">
+							                        <div class="card-body">
+							                            <h5 class="card-title">
+							                                <a href="#" class="text-dark"> 4000/-  MTC</a>
+							                            </h5>
+							                        </div>
+							                        <div class="card-footer">
+							                            <div class="badge badge-danger float-right">30%</div>
+							                            <div class="float-left">
+							                                <a href="#" class="text-danger">1900 /-</a>
+							                                <br>
+							                                <small class="text-muted"><del>2000 /-</del></small>
+							                            </div>
+							                        </div>
+							                    </div>
+							                </div><!--.col-->
+							                <div class="col-md-4">
+							                    <div class="card">
+							                        <img class="card-img-top" src="prakashfinal.jpg" alt="Card image cap">
+							                        <div class="card-body">
+							                            <h5 class="card-title">
+							                                <a href="#" class="text-dark"> 40000/-    MTC</a>
+							                            </h5>
+							                        </div>
+							                        <div class="card-footer">
+							                            <div class="badge badge-danger float-right">30%</div>
+							                            <div class="float-left">
+							                                <a href="#" class="text-danger">1900 IPHONE6</a>
+							                                <br>
+							                                <small class="text-muted"><del>2000 /-</del></small>
+							                            </div>
+							                        </div>
+							                    </div>
+							                </div><!--.col-->
+							            </div><!--.row-->
+							        </div><!--.container-->
+							    </div><!--.container-fluid-->
+							</section>
+						</div>
+			
+</div>
+</div>
 </div>

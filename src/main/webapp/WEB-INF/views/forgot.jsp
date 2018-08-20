@@ -1,21 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<style>
-.form-gap {
-    padding-top: 70px;
-}
-</style>
-</head>
-<body>
+
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <div class="form-gap"></div>
 <div class="container">
 	<div class="row">
@@ -27,22 +13,23 @@
                   <h2 class="text-center">Forgot Password?</h2>
                   <p>You can reset your password after Verification</p>
                   <div class="panel-body">
-    
-                    <form id="register-form" role="form" autocomplete="off" class="form" method="post">
+    				<fieldset>
+                    <form:form id="register-form" role="form" autocomplete="off" class="form" method="post" action="verify" modelAttribute="customer">
     
                       <div class="form-group">
                         <div class="input-group">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
-                          <input id="email" name="email" placeholder="email address" class="form-control"  type="email">
+                          <form:input id="email" path="emailId" placeholder="email address" class="form-control"  type="email"/>
                         </div>
                       </div>
                       <div class="form-group">
                         <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Verify" type="submit">
                       </div>
-                      
-                      <input type="hidden" class="hide" name="token" id="token" value=""> 
-                    </form>
-    
+                      <c:if test="${!empty error}">
+                      <input type="hidden" class="hide" name="token" id="token" style="color:red;" value="${error}"> 
+                      </c:if>
+                    </form:form>
+    				</fieldset>
                   </div>
                 </div>
               </div>
@@ -50,5 +37,3 @@
           </div>
 	</div>
 </div>
-</body>
-</html>

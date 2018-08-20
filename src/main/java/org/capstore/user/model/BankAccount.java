@@ -1,15 +1,24 @@
 package org.capstore.user.model;
 
 
-
 public class BankAccount {
-
+	
 	private int bankAccountId;
+	
 	private Customer customer;
 	private long accountNumber;
 	private long cardNumber;
 	private double balance;
 	private int cvvNumber;
+	
+	private RefundMoney refundMoney;
+	
+	public RefundMoney getRefundMoney() {
+		return refundMoney;
+	}
+	public void setRefundMoney(RefundMoney refundMoney) {
+		this.refundMoney = refundMoney;
+	}
 	public int getBankAccountId() {
 		return bankAccountId;
 	}
@@ -46,8 +55,9 @@ public class BankAccount {
 	public void setCvvNumber(int cvvNumber) {
 		this.cvvNumber = cvvNumber;
 	}
+	
 	public BankAccount(int bankAccountId, Customer customer, long accountNumber, long cardNumber, double balance,
-			int cvvNumber) {
+			int cvvNumber, RefundMoney refundMoney) {
 		super();
 		this.bankAccountId = bankAccountId;
 		this.customer = customer;
@@ -55,6 +65,7 @@ public class BankAccount {
 		this.cardNumber = cardNumber;
 		this.balance = balance;
 		this.cvvNumber = cvvNumber;
+		this.refundMoney = refundMoney;
 	}
 	public BankAccount() {
 		
