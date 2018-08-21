@@ -7,6 +7,10 @@
 <title>Welcome</title>
 </head>
 <body>
+<<<<<<< HEAD
 <img src="./resources/images/welcome.jpg" width="850px" height="400px" scrolling="none">
+=======
+<img src="./resources/images/welcome.jpg" class="img-circle" width="850px" height="400px" >
+>>>>>>> refs/heads/cust
 </body>
 </html>
