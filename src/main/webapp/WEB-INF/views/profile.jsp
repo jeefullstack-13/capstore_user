@@ -1,4 +1,4 @@
- <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,27 +10,27 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+<form:form  modelAttribute="cust"  target="cntFrame" >
 <div class="container">
   <h2>Edit Profile</h2>
-  <form:form class="form-horizontal" action="update" target="cntFrame" modelAttribute="cust">
+ 
     <div class="form-group" align="justify">
       <label class="control-label col-sm-2" for="email">Name:</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="email" placeholder="Enter name" name="email" >
+        <input type="text" class="form-control" placeholder="Enter name" name="email" path="customerName" >
       </div>
     </div>
     <div class="form-group" align="justify">
       <label class="control-label col-sm-2" for="pwd">Mobile:</label>
       <div class="col-sm-10">          
-        <input type="password" class="form-control" id="pwd" placeholder="Enter mobile" name="pwd">
+        <input type="password" class="form-control" id="pwd" placeholder="Enter mobile" name="pwd" path="phoneNumber">
       </div>
     </div>
     
      <div class="form-group" align="justify">
       <label class="control-label col-sm-2" for="pwd">E-mail:</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="pwd" placeholder="Enter e-Mail" name="pwd">
+        <input type="text" class="form-control" id="email" placeholder="Enter e-Mail" name="pwd" path="emailId">
       </div>
     </div>
      <div class="form-group" align="justify">
@@ -45,8 +45,9 @@
         <button type="submit" class="btn btn-primary">Done</button>
       </div>
     </div>
-  </form:form>
+  
 </div>
+</form:form>
 
 </body>
 </html>

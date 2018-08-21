@@ -1,6 +1,6 @@
 package org.capstore.user.controller;
 
-
+import javax.validation.Valid;
 import javax.servlet.http.HttpSession;
 import org.capstore.user.model.Customer;
 import org.capstore.user.model.Order;
@@ -57,10 +57,9 @@ public class CustomerController {
 			return "customerorder";
 			}
 	
-	@RequestMapping("/customerProfile/{customerId}")
+	@RequestMapping("/customerProfile")
 	public String viewCustomerProfile(HttpSession session,ModelMap map) {
 		//Integer custId= Integer.parseInt(session.getAttribute("customerId").toString());
-
 		final String uri="http://localhost:8085/capstoreApp/api/v1/customerProfile/1";
 		RestTemplate restTemplate=new RestTemplate();
 		

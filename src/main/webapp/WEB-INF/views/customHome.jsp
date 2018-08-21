@@ -40,7 +40,7 @@
   <div class="row content">
     <div class="col-sm-3 sidenav">
     <p><img src="./resources/images/profile.png" class="img-circle" width="100px" height="100px"></p>
-      <div class="well"><a href="customerProfile/{customerId}" target="cntFrame">My Profile</a></div>
+      <div class="well"><a href="customerProfile" target="cntFrame">My Profile</a></div>
       <div class="well">
        <p><a href="inbox" target="cntFrame">Inbox</a></p></div>
          <div class="well">

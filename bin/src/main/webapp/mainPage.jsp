@@ -7,6 +7,14 @@
 <title>Welcome</title>
 </head>
 <body>
+<<<<<<< HEAD
 <img src="./resources/images/welcome.jpg" width="850px" height="400px" scrolling="none">
+=======
+<<<<<<< HEAD
+<img src="./resources/images/welcome.jpg" width="850px" height="400px" scrolling="none">
+=======
+<img src="./resources/images/welcome.jpg" class="img-circle" width="850px" height="400px" >
+>>>>>>> refs/heads/cust
+>>>>>>> branch 'master' of https://github.com/jeefullstack-13/capstore_user.git
 </body>
 </html>

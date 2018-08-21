@@ -25,7 +25,7 @@
 		<tr>
 			<th>Order Id</th>
 			<th>Order Date</th>
-			<th>Items</th>
+			
 			<th>Delivery Status</th>
 			<th>Return Goods</th>
 			</tr>
