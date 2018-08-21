@@ -65,7 +65,7 @@ public class AdminMerchantController {
 			
 			Merchant merchant = new Merchant();
 			merchant.setMerchantId(merchantId);
-			merchant.setActive(true);
+			merchant.setIsActive("yes");
 			
 			restTemplate.put(uri_merchants, merchant, params);
 			

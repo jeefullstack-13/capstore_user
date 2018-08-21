@@ -5,15 +5,14 @@ import java.util.List;
 
 
 public class Merchant {
-	
 	private int merchantId;
-	private String name;
+	private String merchantname;
 	private String companyName;
 	private String phoneNo;
 	private String emailId;
 	private String password;
-	private boolean isCertified;
-	private boolean isActive;
+	private String isCertified;
+	private String isActive;
 	private String status;
 	private Date lastLogin; 
 	
@@ -22,67 +21,20 @@ public class Merchant {
 	private List<Inventory> inventory;
 	
 	private List<FeedBack> feedback;
-	
-	private List<ReturnOrders> returnOrder;
 	public Merchant() {
 		
 	}
-	
-	
-	
-	
-
-
-
-	public Merchant(int merchantId, String name, String companyName, String phoneNo, String emailId, String password,
-			boolean isCertified, boolean isActive, String status, Date lastLogin, List<Address> address,
-			List<Inventory> inventory, List<FeedBack> feedback, List<ReturnOrders> returnOrder) {
-		super();
-		this.merchantId = merchantId;
-		this.name = name;
-		this.companyName = companyName;
-		this.phoneNo = phoneNo;
-		this.emailId = emailId;
-		this.password = password;
-		this.isCertified = isCertified;
-		this.isActive = isActive;
-		this.status = status;
-		this.lastLogin = lastLogin;
-		this.address = address;
-		this.inventory = inventory;
-		this.feedback = feedback;
-		this.returnOrder = returnOrder;
-	}
-
-
-
-
-
-
-
-	public List<ReturnOrders> getReturnOrder() {
-		return returnOrder;
-	}
-
-
-
-	public void setReturnOrder(List<ReturnOrders> returnOrder) {
-		this.returnOrder = returnOrder;
-	}
-
-
-
 	public int getMerchantId() {
 		return merchantId;
 	}
 	public void setMerchantId(int merchantId) {
 		this.merchantId = merchantId;
 	}
-	public String getName() {
-		return name;
+	public String getMerchantname() {
+		return merchantname;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setMerchantname(String merchantname) {
+		this.merchantname = merchantname;
 	}
 	public String getCompanyName() {
 		return companyName;
@@ -108,23 +60,19 @@ public class Merchant {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public boolean isCertified() {
+	public String getIsCertified() {
 		return isCertified;
 	}
-	public void setCertified(boolean isCertified) {
+	public void setIsCertified(String isCertified) {
 		this.isCertified = isCertified;
 	}
-	
-	public boolean isActive() {
+	public String getIsActive() {
 		return isActive;
 	}
-
-
-public void setActive(boolean isActive) {
+	public void setIsActive(String isActive) {
 		this.isActive = isActive;
 	}
-
-public String getStatus() {
+	public String getStatus() {
 		return status;
 	}
 	public void setStatus(String status) {
@@ -154,6 +102,25 @@ public String getStatus() {
 	public void setFeedback(List<FeedBack> feedback) {
 		this.feedback = feedback;
 	}
+	public Merchant(int merchantId, String merchantname, String companyName, String phoneNo, String emailId,
+			String password, String isCertified, String isActive, String status, Date lastLogin, List<Address> address,
+			List<Inventory> inventory, List<FeedBack> feedback) {
+		super();
+		this.merchantId = merchantId;
+		this.merchantname = merchantname;
+		this.companyName = companyName;
+		this.phoneNo = phoneNo;
+		this.emailId = emailId;
+		this.password = password;
+		this.isCertified = isCertified;
+		this.isActive = isActive;
+		this.status = status;
+		this.lastLogin = lastLogin;
+		this.address = address;
+		this.inventory = inventory;
+		this.feedback = feedback;
+	}
 	
-
+	
+	
 }

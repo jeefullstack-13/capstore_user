@@ -10,7 +10,7 @@ public class Admin {
 	private String email;
 	private String password;
 	private Date lastLogin;
-		public int getAdminId() {
+	public int getAdminId() {
 		return adminId;
 	}
 	public void setAdminId(int adminId) {
@@ -45,6 +45,7 @@ public class Admin {
 		super();
 	}
 
+	
 
 
 }

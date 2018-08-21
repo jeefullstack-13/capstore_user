@@ -19,7 +19,8 @@
 <section>
  	 <article>
 		<%@include file="loginPanel.jsp" %>	
-		<%@include file="registration.jsp" %>
+		<%@include file="registration.jsp"%>
+		
 	</article>
     <article>
 		<%@include file="carousal.jsp" %>	
