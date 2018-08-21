@@ -4,9 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Welcome</title>
 </head>
 <body>
-Welcome To Your Account
+<<<<<<< HEAD
+<img src="./resources/images/welcome.jpg" width="850px" height="400px" scrolling="none">
+=======
+<img src="./resources/images/welcome.jpg" class="img-circle" width="850px" height="400px" >
+>>>>>>> refs/heads/cust
 </body>
 </html>
