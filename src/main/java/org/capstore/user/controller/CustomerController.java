@@ -2,7 +2,6 @@ package org.capstore.user.controller;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
-
 import org.capstore.user.model.Customer;
 import org.capstore.user.model.Order;
 import org.springframework.stereotype.Controller;
@@ -52,7 +51,7 @@ public class CustomerController {
 			return "customerorder";
 			}
 	
-	@PutMapping("/edit")
+	/*@PutMapping("/edit")
 	public String editProfile(	@Valid @ModelAttribute("cust") Customer cust,
 			BindingResult result) {
 		
@@ -64,7 +63,57 @@ public class CustomerController {
 
 		return "customerProfile"; 
 		
+	}*/
+	
+	
+	@RequestMapping("/customerProfile")
+	public String viewCustomerProfile(HttpSession session,ModelMap map) {
+		//Integer custId= Integer.parseInt(session.getAttribute("customerId").toString());
+		final String uri="http://localhost:8085/capstoreApp/api/v1/customerProfile/1";
+		RestTemplate restTemplate=new RestTemplate();
+		
+		Customer customer= restTemplate.getForObject(uri, Customer.class);
+		
+	
+		map.put("cust",customer);
+				
+			return "customerProfile";
+			}
+	
+	
+	
+	@RequestMapping("/profile")
+	public String editCustomerProfile(ModelMap map) {
+		
+		final String uri="http://localhost:8085/capstoreApp/api/v1/customerProfile";
+		RestTemplate restTemplate=new RestTemplate();
+		restTemplate.getForObject(uri, Customer.class);
+		map.put("cust", new Customer());
+		
+		return "redirect:profile";
+		
 	}
+	
+	
+
+	/*@RequestMapping("/update")
+	public String editProfile(ModelMap map) {
+		
+		final String uri="http://localhost:8085/capstoreApp/api/v1";
+		RestTemplate restTemplate=new RestTemplate();
+		Customer[] customer= restTemplate.getForObject(uri, Customer[].class);
+		
+		RestTemplate restTemplate1=new RestTemplate();
+			final String uri1="http://localhost:8085/capstoreApp/api/v1//profile/{customerId}";
+			Customer customer1=	restTemplate.getForObject(uri,Customer.class);
+			map.put("customers",customer);
+			map.put("cust", customer1);
+			
+			return "customerProfile"; 
+		
+	}*/
+	
+	
 	
 	
 }

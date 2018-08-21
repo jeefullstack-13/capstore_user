@@ -3,6 +3,8 @@ package org.capstore.user.model;
 import java.util.Date;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 
 
 public class Customer {
