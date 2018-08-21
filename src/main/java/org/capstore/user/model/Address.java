@@ -1,7 +1,6 @@
 package org.capstore.user.model;
 
-
-
+import java.util.List;
 
 public class Address {
 
@@ -15,7 +14,7 @@ public class Address {
 	private String country;
 	private int zipcode; 
 	
-	private Shipping shipping;
+	private List<Shipping> shipping;
 	
 	
 	public int getAddressId() {
@@ -66,10 +65,10 @@ public class Address {
 	public void setZipcode(int zipcode) {
 		this.zipcode = zipcode;
 	}
-	public Shipping getShipping() {
+	public List<Shipping> getShipping() {
 		return shipping;
 	}
-	public void setShipping(Shipping shipping) {
+	public void setShipping(List<Shipping> shipping) {
 		this.shipping = shipping;
 	}
 	
@@ -78,7 +77,7 @@ public class Address {
 		
 	}
 	public Address(int addressId, Customer customer, Merchant merchant, int streetNumber, String city, String state,
-			String country, int zipcode, Shipping shipping) {
+			String country, int zipcode, List<Shipping> shipping) {
 		super();
 		this.addressId = addressId;
 		this.customer = customer;

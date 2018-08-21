@@ -13,7 +13,7 @@ public class Shipping {
 	
 	private Order order;
 	
-	private Email email;
+	
 	public Shipping() {
 		
 	}
@@ -52,21 +52,15 @@ public class Shipping {
 		this.order = order;
 	}
 
-	public Email getEmail() {
-		return email;
-	}
+	
 
-	public void setEmail(Email email) {
-		this.email = email;
-	}
-
-	public Shipping(int shippingId, Customer customer, Address shippingAddress, Order order, Email email) {
+	public Shipping(int shippingId, Customer customer, Address shippingAddress, Order order) {
 		super();
 		this.shippingId = shippingId;
 		this.customer = customer;
 		this.shippingAddress = shippingAddress;
 		this.order = order;
-		this.email = email;
+	
 	}
 
 	
