@@ -173,7 +173,7 @@ public class UploadingController {
     	restTemplate2.postForEntity(uri2,e,Email.class);
        }
     	model.addAttribute("product", new Attraction());
-    	return "template";
+    	return "template1";
     }
     
     
