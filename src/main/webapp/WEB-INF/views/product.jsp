@@ -13,11 +13,11 @@
    <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop By Category <span class="caret"></span></a>
-        <ul class="dropdown-menu">
+         <ul class="dropdown-menu">
         
           <li><a href="admininventory1/{category1}">Electronics</a></li>
-          <li><a href="#">Clothing</a></li>
-          <li><a href="#">Books</a></li>
+          <li><a href="admininventory2/{category2}">Clothing</a></li>
+          <li><a href="admininventory3/{category3}">Books</a></li>
         </ul>
         </ul>
 
@@ -25,9 +25,13 @@
     <div class="input-group">
     <input type="text" class="form-control" placeholder="Search">
     <div class="input-group-btn">
-      <button class="btn btn-default" type="submit">
-        <i class="glyphicon glyphicon-search"></i>
-      </button>
+       <a href="admininventory" id="searchMerch">
+							<button class="btn btn-default" type="button"
+								onclick="document.getElementById('searchMerch').href='admininventory/' + document.getElementById('searchTerm1').value;">
+								<i class="glyphicon glyphicon-search"></i>
+
+							</button>
+						</a>
     </div>
   </div>
  </form>

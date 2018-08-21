@@ -14,7 +14,7 @@
 						class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<ul class="list-inline">
-							<li><a href="admininventory1/{category1}">Electronics</a></li>
+							<li><a href="admininventory1/{category1}" >Electronics</a></li>
 							<br>
 							<li><a href="admininventory2/{category2}">Clothing</a></li>
 							<br>
@@ -29,7 +29,7 @@
 						id="searchTerm1"> >
 					<div class="input-group-btn">
 						<!-- <button class="btn btn-default" type="submit"> -->
-						<a href="admininventory" id="searchMerch" target="cntFrame">
+						<a href="admininventory" id="searchMerch">
 							<button class="btn btn-default" type="button"
 								onclick="document.getElementById('searchMerch').href='admininventory/' + document.getElementById('searchTerm1').value;">
 								<i class="glyphicon glyphicon-search"></i>

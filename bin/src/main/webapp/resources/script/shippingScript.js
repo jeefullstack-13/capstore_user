@@ -5,13 +5,22 @@ document.getElementById('altAddress').style.display='none';
 
 
 function validateShippingAddForm(){
-var myform=document.getElementById("myform");
-var add=myform["addSt"].value;
+	
+//var myform=document.getElementById("myform");
+/*var add=myform["addSt"].value;
+alert("Hello! I am an alert box!!");
 var city=myform["city"].selectedIndex;
 var state=myform["state"].selectedIndex;
 var country=myform["country"].selectedIndex;
 var zipcode=myform["zipcode"].value;
+var validZip=/^\d{6}$/;*/
+var add=document.getElementById('addSt').value;
+var city=document.getElementById('city').selectedIndex;
+var state=document.getElementById('state').selectedIndex;
+var country=document.getElementById('country').selectedIndex;
+var zipcode=document.getElementById('zipcode').value;
 var validZip=/^\d{6}$/;
+
 var flag=false;
 
 if(add=="" || add==null)
@@ -101,6 +110,7 @@ function closeAltAdd(){
 
 
 function showAltAdd(){
+	
 document.getElementById('altAddress').style.display='block';
 document.getElementById('butptp').style.display='none';
 document.getElementById('curAdd').innerHTML="";
@@ -108,17 +118,26 @@ document.getElementById('curAdd').innerHTML="";
 
 function validateAddForm(){
 var	flag=false;
-	if(document.getElementById('currentAdd').checked){
-		document.getElementById('address').innerHTML="";
-	document.getElementById('City').innerHTML="";
-	document.getElementById('State').innerHTML="";
-	document.getElementById('count').innerHTML="";
-	document.getElementById('zipc').innerHTML="";
-			return true;
+var add = document.getElementsByClassName('accountType');
+var j=0;
+for (var i=0; i < add.length; i++) {
+	if (add[i].checked==true){
+	j=1;
+	break;
 	}
+}
+	if(j==1){
+		document.getElementById('address').innerHTML="";
+		document.getElementById('City').innerHTML="";
+		document.getElementById('State').innerHTML="";
+		document.getElementById('count').innerHTML="";
+		document.getElementById('zipc').innerHTML="";
+		return true;
+	}
+	
 	else{
 		document.getElementById('curAdd').innerHTML="Select Address or enter alternate address";
 		return flag;
 	}
-		
+	
 }

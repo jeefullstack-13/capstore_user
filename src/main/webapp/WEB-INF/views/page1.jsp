@@ -12,7 +12,7 @@
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop By Category <span class="caret"></span></a>
         <ul class="dropdown-menu">
          <ul class="list-inline">
-          <li><a href="admininventory1/electronics">Electronics</a></li><br>
+          <li><a href="admininventory1/{category1}">Electronics</a></li><br>
           <li><a href="admininventory2/{category2}">Clothing</a></li><br>
           <li><a href="admininventory3/{category3}">Books</a></li>
         </ul>
@@ -28,7 +28,7 @@
         <i class="glyphicon glyphicon-search"></i>
       </button> -->
    
-    <a href="Product_full" id="searchMerch" >
+   <a href="admininventory" id="searchMerch">
 							<button class="btn btn-default" type="button"
 								onclick="document.getElementById('searchMerch').href='admininventory/' + document.getElementById('searchTerm1').value;">
 								<i class="glyphicon glyphicon-search"></i>

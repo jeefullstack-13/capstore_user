@@ -14,23 +14,23 @@ import org.springframework.web.client.RestTemplate;
 
 @Controller
 public class AdminMerchantController {
-	   @RequestMapping("/adminmerchant/{name}")
-		public String getMerchantForm(@PathVariable ("name") String name, ModelMap map) {
+	@RequestMapping("/adminmerchant/{name}")
+	public String getMerchantForm(@PathVariable ("name") String name, ModelMap map) {
+	
 		
-			
-			final String uri="http://localhost:8081/capstoreApp/api/v1/adminmerchant/{name}";
-			RestTemplate restTemplate=new RestTemplate();
-			Map<String,Object> params=new HashMap<>();
-			params.put("name", name);
-			Merchant[] merchantList= restTemplate.getForObject(uri, Merchant[].class,params);
-			
+		final String uri="http://localhost:8081/capstoreApp/api/v1/adminmerchant/{name}";
+		RestTemplate restTemplate=new RestTemplate();
+		Map<String,Object> params=new HashMap<>();
+		params.put("name", name);
+		Merchant[] merchantList= restTemplate.getForObject(uri, Merchant[].class,params);
 		
-				map.put("merchantList",merchantList);
-			
-			map.put("Merchant", new Merchant());
-			
-			return "adminMerchantManagement";
-		}
+		
+		map.put("merchantList",merchantList);
+		map.put("Merchant", new Merchant());
+		
+		return "adminMerchantManagement";
+	}
+   
 	   
 	   
 	   @RequestMapping("/validateMerchants")
