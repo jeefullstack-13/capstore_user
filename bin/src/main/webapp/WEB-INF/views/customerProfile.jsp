@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -11,14 +12,17 @@
 <title>My Profile</title>
 </head>
 <body>
+<form:form modelAttribute="">
 <h2>My Profile</h2>
 <table> 
+<tr><td>ID:</td><td>${cust.customerId}</td></tr>
 <tr><td>Name:</td><td>${cust.customerName}</td></tr>
 <tr><td>Mobile:</td><td>${cust.phoneNumber}</td></tr>
 <tr><td>e-Mail:</td><td>${cust.emailId}</td></tr>
 <tr><td>Date of Birth:</td><td>${cust.dateOfBirth}</td></tr>
 <tr><td>Address:</td><td>${cust.address}</td></tr>
-<tr><td> <div class="well"><a href="profile.jsp" target="cntFrame">Edit Profile</a></div></td></tr>
+<tr><td> <div class="well"><a href="profile/{customerId}" target="cntFrame">Edit Profile</a></div></td></tr>
 </table>
+</form:form>
  </body>
 </html>

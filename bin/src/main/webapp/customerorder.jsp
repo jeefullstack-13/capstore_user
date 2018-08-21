@@ -36,7 +36,7 @@
 				<td>
 				<fmt:formatDate value="${order.orderDate}" pattern="dd-MMM-yyyy"/>
 				</td>
-				<td>${orderId. }</td>				
+				<td>${orderId.orderDate }</td>				
 				<td>${order.deliveryStatus }</td>
 				<td><a href="return/${order.orderId}">Return Order</a></td>
 			</tr>

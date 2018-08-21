@@ -1,3 +1,4 @@
+ <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +13,7 @@
 
 <div class="container">
   <h2>Edit Profile</h2>
-  <form class="form-horizontal" action="customerProfile.jsp" target="cntFrame">
+  <form:form class="form-horizontal" action="update" target="cntFrame" modelAttribute="cust">
     <div class="form-group" align="justify">
       <label class="control-label col-sm-2" for="email">Name:</label>
       <div class="col-sm-10">
@@ -44,7 +45,7 @@
         <button type="submit" class="btn btn-primary">Done</button>
       </div>
     </div>
-  </form>
+  </form:form>
 </div>
 
 </body>
